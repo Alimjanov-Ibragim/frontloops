@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ru">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="cleartype" content="on">
+
+        <meta name="theme-color" content="#3E50B4">
+
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+        <meta name="format-detection" content="telephone=no">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        
+        
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Documentation - Marmelad v4.46.29">
+        <meta name="description" content="Сборщик сайтов, предназначенный для подготовки вёрстки для использования в роли реального сайта, либо, для последующего использования в различных CMS, либо в React, Vue, Angular, и т.п. приложениях, ну или там где вам заблагорассудится, дело ваше 🤘">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://github.com/solversgroup/marmelad">
+        <meta property="og:title" content="Documentation">
+        <meta property="og:description" content="Сборщик сайтов, предназначенный для подготовки вёрстки для использования в роли реального сайта, либо, для последующего использования в различных CMS, либо в React, Vue, Angular, и т.п. приложениях, ну или там где вам заблагорассудится, дело ваше 🤘">
+        <meta property="og:image" content="https://avatars0.githubusercontent.com/u/41577953?s=200&amp;v=4">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://github.com/solversgroup/marmelad">
+        <meta property="twitter:title" content="Documentation">
+        <meta property="twitter:description" content="Сборщик сайтов, предназначенный для подготовки вёрстки для использования в роли реального сайта, либо, для последующего использования в различных CMS, либо в React, Vue, Angular, и т.п. приложениях, ну или там где вам заблагорассудится, дело ваше 🤘">
+        <meta property="twitter:image" content="https://avatars0.githubusercontent.com/u/41577953?s=200&amp;v=4">
+        
+
+        <title>Documentation - Marmelad v4.46.29</title>
+
+
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
+
+    </head>
+
+    <body class="app app--docs docs">
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="main-svg-sprite" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 20 20" id="chevron-down" xmlns="http://www.w3.org/2000/svg"><path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83a.697.697 0 0 1-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969s.709-.268.979 0L10 13.25l7.418-7.141z"></path></symbol><symbol viewBox="0 0 20 20" id="chevron-left" xmlns="http://www.w3.org/2000/svg"><path d="M13.891 17.418c.268.272.268.709 0 .979s-.701.271-.969 0l-7.83-7.908a.697.697 0 0 1 0-.979l7.83-7.908c.268-.27.701-.27.969 0s.268.709 0 .979L6.75 10l7.141 7.418z"></path></symbol><symbol viewBox="0 0 20 20" id="chevron-right" xmlns="http://www.w3.org/2000/svg"><path d="M13.25 10L6.109 2.58a.697.697 0 0 1 0-.979.68.68 0 0 1 .969 0l7.83 7.908a.697.697 0 0 1 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0s-.268-.707 0-.979L13.25 10z"></path></symbol><symbol viewBox="0 0 20 20" id="chevron-up" xmlns="http://www.w3.org/2000/svg"><path d="M2.582 13.891c-.272.268-.709.268-.979 0s-.271-.701 0-.969l7.908-7.83a.697.697 0 0 1 .979 0l7.908 7.83c.27.268.27.701 0 .969s-.709.268-.978 0L10 6.75l-7.418 7.141z"></path></symbol><symbol viewBox="0 0 24 24" id="close" xmlns="http://www.w3.org/2000/svg"><path d="M18.984 6.422L13.406 12l5.578 5.578-1.406 1.406L12 13.406l-5.578 5.578-1.406-1.406L10.594 12 5.016 6.422l1.406-1.406L12 10.594l5.578-5.578z"></path></symbol><symbol viewBox="-467 269 24 24" id="favorite" xmlns="http://www.w3.org/2000/svg"><path d="M-455 290.4l-1.5-1.3c-5.1-4.7-8.5-7.8-8.5-11.5 0-3.1 2.4-5.5 5.5-5.5 1.7 0 3.4.8 4.5 2.1 1.1-1.3 2.8-2.1 4.5-2.1 3.1 0 5.5 2.4 5.5 5.5 0 3.8-3.4 6.9-8.5 11.5l-1.5 1.3z"></path></symbol><symbol viewBox="-467 269 24 24" id="favorite_border" xmlns="http://www.w3.org/2000/svg"><path d="M-450.5 272c-1.7 0-3.4.8-4.5 2.1-1.1-1.3-2.8-2.1-4.5-2.1-3.1 0-5.5 2.4-5.5 5.5 0 3.8 3.4 6.9 8.5 11.5l1.5 1.3 1.5-1.3c5.1-4.7 8.5-7.8 8.5-11.5 0-3.1-2.4-5.5-5.5-5.5zm-4.4 15.5l-.1.1-.1-.1c-4.8-4.3-7.9-7.2-7.9-10 0-2 1.5-3.5 3.5-3.5 1.5 0 3 1 3.6 2.4h1.9c.5-1.4 2-2.4 3.6-2.4 2 0 3.5 1.5 3.5 3.5-.1 2.9-3.2 5.7-8 10z"></path></symbol><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></symbol><symbol viewBox="0 0 24 24" id="more_horiz" xmlns="http://www.w3.org/2000/svg"><path d="M12 9.984c1.078 0 2.016.938 2.016 2.016s-.938 2.016-2.016 2.016S9.984 13.078 9.984 12 10.922 9.984 12 9.984zm6 0c1.078 0 2.016.938 2.016 2.016s-.938 2.016-2.016 2.016-2.016-.938-2.016-2.016.938-2.016 2.016-2.016zm-12 0c1.078 0 2.016.938 2.016 2.016S7.078 14.016 6 14.016 3.984 13.078 3.984 12 4.922 9.984 6 9.984z"></path></symbol><symbol viewBox="0 0 24 24" id="more_vert" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.984c1.078 0 2.016.938 2.016 2.016s-.938 2.016-2.016 2.016S9.984 19.078 9.984 18s.938-2.016 2.016-2.016zm0-6c1.078 0 2.016.938 2.016 2.016s-.938 2.016-2.016 2.016S9.984 13.078 9.984 12 10.922 9.984 12 9.984zm0-1.968c-1.078 0-2.016-.938-2.016-2.016S10.922 3.984 12 3.984s2.016.938 2.016 2.016S13.078 8.016 12 8.016z"></path></symbol><symbol viewBox="0 0 32 32" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M19.427 20.427a8.5 8.5 0 1 1 2-2l5.585 5.585c.55.55.546 1.431 0 1.976l-.023.023a1.398 1.398 0 0 1-1.976 0l-5.585-5.585zM14.5 20a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13z"></path></symbol><symbol viewBox="0 0 32 32" id="spinner" xmlns="http://www.w3.org/2000/svg"><path d="M16 0C7.163 0 0 7.163 0 16s7.163 16 16 16 16-7.163 16-16S24.837 0 16 0zm0 8a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm9.546 17.546c-2.55 2.55-5.94 3.954-9.546 3.954s-6.996-1.404-9.546-3.954S2.5 19.606 2.5 16c0-3.606 1.404-6.996 3.954-9.546l2.121 2.121c-4.094 4.094-4.094 10.755 0 14.849 1.983 1.983 4.62 3.075 7.425 3.075s5.441-1.092 7.425-3.075c4.094-4.094 4.094-10.755 0-14.849l2.121-2.121c2.55 2.55 3.954 5.94 3.954 9.546s-1.404 6.996-3.954 9.546z"></path></symbol></svg>
+
+
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <div class="app__wrapper ">
+            
+            
+            <header class="app-header mt-4">
+    <div class="app-header__content container">
+        <h1 class="display-4">
+            Marmelad v4.46.29
+        </h1>
+        <p class="lead">Bootstrap </p>
+        <hr>
+    </div>
+</header><!-- b:app-header -->
+
+            
+
+            <div class="app__content container">
+
+                <main class="app__main">
+                    
+
+<dl>
+    <dt><a href="https://ru.bem.info/methodology/" target="_blank" rel="noopener">БЭМ методология</a></dt>
+    <dd>Методология БЭМ создана в Яндексе для разработки сайтов, которые надо делать быстро, а поддерживать долгие годы. Она позволяет создавать расширяемые и повторно используемые компоненты интерфейса.</dd>
+</dl>
+
+<dl>
+    <dt><a href="http://nicothin.github.io/idiomatic-pre-CSS/" target="_blank" rel="noopener">Как работать с CSS-препроцессорами и БЭМ</a></dt>
+    <dd>Список рекомендаций по неусложнению жизни себе и другим участникам проекта по вёрстке.</dd>
+</dl>
+
+<dl>
+    <dt><a href="https://github.com/yoksel/common-words" target="_blank" rel="noopener">Слова, часто используемые в CSS-классах</a></dt>
+    <dd>Подборка часто используемых названий CSS-классов с примерами</dd>
+</dl>
+
+<hr>
+
+<h2>Кнопки</h2>
+
+<p><button type="button" class="btn btn-theme">Theme</button><button type="button" class="btn btn-primary">Primary</button><button type="button" class="btn btn-secondary">Secondary</button><button type="button" class="btn btn-success">Success</button><button type="button" class="btn btn-info">Info</button><button type="button" class="btn btn-warning">Warning</button><button type="button" class="btn btn-danger">Danger</button><button type="button" class="btn btn-light">Light</button><button type="button" class="btn btn-dark">Dark</button></p>
+
+<hr>
+
+<h2>SVG-иконки</h2>
+<p>
+<div class="svg-icon svg-icon--chevron-down"><svg class="svg-icon__link"><use xlink:href="#chevron-down"></use></svg></div><div class="svg-icon svg-icon--chevron-left"><svg class="svg-icon__link"><use xlink:href="#chevron-left"></use></svg></div><div class="svg-icon svg-icon--chevron-right"><svg class="svg-icon__link"><use xlink:href="#chevron-right"></use></svg></div><div class="svg-icon svg-icon--chevron-up"><svg class="svg-icon__link"><use xlink:href="#chevron-up"></use></svg></div><div class="svg-icon svg-icon--close"><svg class="svg-icon__link"><use xlink:href="#close"></use></svg></div><div class="svg-icon svg-icon--favorite"><svg class="svg-icon__link"><use xlink:href="#favorite"></use></svg></div><div class="svg-icon svg-icon--favorite_border"><svg class="svg-icon__link"><use xlink:href="#favorite_border"></use></svg></div><div class="svg-icon svg-icon--menu"><svg class="svg-icon__link"><use xlink:href="#menu"></use></svg></div><div class="svg-icon svg-icon--more_horiz"><svg class="svg-icon__link"><use xlink:href="#more_horiz"></use></svg></div><div class="svg-icon svg-icon--more_vert"><svg class="svg-icon__link"><use xlink:href="#more_vert"></use></svg></div><div class="svg-icon svg-icon--search"><svg class="svg-icon__link"><use xlink:href="#search"></use></svg></div><div class="svg-icon svg-icon--spinner"><div class="svg-icon__spinner"><svg class="svg-icon__link"><use xlink:href="#spinner"></use></svg></div></div>
+<div class="svg-icon svg-icon--close  _spinner"><div class="svg-icon__spinner"><svg class="svg-icon__link"><use xlink:href="#close"></use></svg></div></div>
+<div class="svg-icon svg-icon--more_vert  _spinner"><div class="svg-icon__spinner"><svg class="svg-icon__link"><use xlink:href="#more_vert"></use></svg></div></div>
+</p>
+
+<hr>
+
+<h2>WordPress галерея</h2>
+<div class="gallery gallery-columns-5">
+    <figure class="gallery-item">
+        <div class="gallery-icon landscape">
+            <a href="/img/thumb-demo-0.jpg" target="_blank" rel="noopener"><img width="150" height="150" src="/img/thumb-demo-0.jpg" class="attachment-thumbnail" alt="alt text"></a>
+        </div>
+        <figcaption class="wp-caption-text gallery-caption" data-forcefeed="words|3|5">Подпись картинки</figcaption>
+    </figure><figure class="gallery-item">
+        <div class="gallery-icon landscape">
+            <a href="/img/thumb-demo-1.jpg" target="_blank" rel="noopener"><img width="150" height="150" src="/img/thumb-demo-1.jpg" class="attachment-thumbnail" alt="alt text"></a>
+        </div>
+        <figcaption class="wp-caption-text gallery-caption" data-forcefeed="words|3|5">Подпись картинки</figcaption>
+    </figure><figure class="gallery-item">
+        <div class="gallery-icon landscape">
+            <a href="/img/thumb-demo-2.jpg" target="_blank" rel="noopener"><img width="150" height="150" src="/img/thumb-demo-2.jpg" class="attachment-thumbnail" alt="alt text"></a>
+        </div>
+        <figcaption class="wp-caption-text gallery-caption" data-forcefeed="words|3|5">Подпись картинки</figcaption>
+    </figure><figure class="gallery-item">
+        <div class="gallery-icon landscape">
+            <a href="/img/thumb-demo-3.jpg" target="_blank" rel="noopener"><img width="150" height="150" src="/img/thumb-demo-3.jpg" class="attachment-thumbnail" alt="alt text"></a>
+        </div>
+        <figcaption class="wp-caption-text gallery-caption" data-forcefeed="words|3|5">Подпись картинки</figcaption>
+    </figure><figure class="gallery-item">
+        <div class="gallery-icon landscape">
+            <a href="/img/thumb-demo-4.jpg" target="_blank" rel="noopener"><img width="150" height="150" src="/img/thumb-demo-4.jpg" class="attachment-thumbnail" alt="alt text"></a>
+        </div>
+        <figcaption class="wp-caption-text gallery-caption" data-forcefeed="words|3|5">Подпись картинки</figcaption>
+    </figure><figure class="gallery-item">
+        <div class="gallery-icon landscape">
+            <a href="/img/thumb-demo-5.jpg" target="_blank" rel="noopener"><img width="150" height="150" src="/img/thumb-demo-5.jpg" class="attachment-thumbnail" alt="alt text"></a>
+        </div>
+        <figcaption class="wp-caption-text gallery-caption" data-forcefeed="words|3|5">Подпись картинки</figcaption>
+    </figure><figure class="gallery-item">
+        <div class="gallery-icon landscape">
+            <a href="/img/thumb-demo-6.jpg" target="_blank" rel="noopener"><img width="150" height="150" src="/img/thumb-demo-6.jpg" class="attachment-thumbnail" alt="alt text"></a>
+        </div>
+        <figcaption class="wp-caption-text gallery-caption" data-forcefeed="words|3|5">Подпись картинки</figcaption>
+    </figure><figure class="gallery-item">
+        <div class="gallery-icon landscape">
+            <a href="/img/thumb-demo-7.jpg" target="_blank" rel="noopener"><img width="150" height="150" src="/img/thumb-demo-7.jpg" class="attachment-thumbnail" alt="alt text"></a>
+        </div>
+        <figcaption class="wp-caption-text gallery-caption" data-forcefeed="words|3|5">Подпись картинки</figcaption>
+    </figure><figure class="gallery-item">
+        <div class="gallery-icon landscape">
+            <a href="/img/thumb-demo-8.jpg" target="_blank" rel="noopener"><img width="150" height="150" src="/img/thumb-demo-8.jpg" class="attachment-thumbnail" alt="alt text"></a>
+        </div>
+        <figcaption class="wp-caption-text gallery-caption" data-forcefeed="words|3|5">Подпись картинки</figcaption>
+    </figure><figure class="gallery-item">
+        <div class="gallery-icon landscape">
+            <a href="/img/thumb-demo-9.jpg" target="_blank" rel="noopener"><img width="150" height="150" src="/img/thumb-demo-9.jpg" class="attachment-thumbnail" alt="alt text"></a>
+        </div>
+        <figcaption class="wp-caption-text gallery-caption" data-forcefeed="words|3|5">Подпись картинки</figcaption>
+    </figure>
+</div>
+
+<hr>
+<h2>Картинки</h2>
+<h3><code>img</code> внутри <code>p</code> с классом <code>alignleft</code></h3>
+<p><img class="alignleft" width="160" height="160" src="/img/thumb-demo-0.jpg"> Экспертиза выполненного проекта индуцирует product placement. Создание приверженного покупателя транслирует конструктивный CTR, используя опыт предыдущих кампаний. Партисипативное планирование порождает конструктивный жизненный цикл продукции.</p>
+<div class="clearfix"></div>
+<h3><code>img</code> внутри <code>p</code> с классом <code>alignright</code></h3>
+<p><img class="alignright" width="160" height="160" src="/img/thumb-demo-1.jpg"> Управление брендом поразительно. Примерная структура маркетингового исследования реально обуславливает стратегический рыночный план, отвоевывая рыночный сегмент. Медийная реклама, не меняя концепции, изложенной выше, существенно стабилизирует побочный PR-эффект.</p>
+<div class="clearfix"></div>
+<h3><code>figure</code> с классом <code>alignleft</code></h3>
+<figure style="width: 200px" class="wp-caption alignleft"><a href="#"><img class="size-medium wp-image-239" src="/img/thumb-demo-2.jpg" alt="Атрибут alt" width="160" height="160"></a><figcaption class="wp-caption-text" data-forcefeed="words|3|5">Подпись к картинке</figcaption></figure>
+<p>Стиль менеджмента непосредственно индуцирует конструктивный клиентский спрос. Объемная скидка, следовательно, последовательно консолидирует принцип восприятия. Ретроконверсия национального наследия усиливает социометрический стратегический маркетинг.</p>
+<div class="clearfix"></div>
+<h3><code>figure</code> с классом <code>alignright</code></h3>
+<figure style="width: 200px" class="wp-caption alignright"><a href="#"><img class="size-medium wp-image-239" src="/img/thumb-demo-3.jpg" alt="Атрибут alt" width="160" height="160"></a><figcaption class="wp-caption-text" data-forcefeed="words|3|5">Подпись к картинке</figcaption></figure>
+<p>Рекламная заставка изоморфна времени. Надо сказать, что анализ рыночных цен стремительно развивает стратегический рыночный план. Стратегический маркетинг экономит эмпирический имидж. Креативная концепция консолидирует поведенческий таргетинг.</p>
+<div class="clearfix"></div>
+<h3 style="text-align:center"><code>figure</code> с классом <code>aligncenter</code></h3>
+<figure style="width: 320px" class="wp-caption aligncenter"><a href="#"><img class="size-medium wp-image-239" src="/img/thumb-demo-3.jpg" alt="Атрибут alt" width="320" height="320"></a><figcaption class="wp-caption-text" data-forcefeed="words|3|5">Подпись к картинке</figcaption></figure>
+
+
+                </main><!-- e:main -->
+                
+                
+
+                
+
+            </div><!-- b:m-content -->
+            
+            
+            <footer class="app-footer">
+    <div class="app-footer__content container">
+        <p><small><a href="https://github.com/yunusga/marmelad" rel="noopener" target="_blank">Marmelad v4.46.29</a></small></p>
+    </div><!-- e:content -->
+</footer><!-- b:app-footer -->
+
+            
+
+        </div><!-- b:wrapper -->
+
+        <div class="page-scroller">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20" class="page-scroller__ctrl">
+        <path d="M2.582 13.891c-0.272 0.268-0.709 0.268-0.979 0s-0.271-0.701 0-0.969l7.908-7.83c0.27-0.268 0.707-0.268 0.979 0l7.908 7.83c0.27 0.268 0.27 0.701 0 0.969s-0.709 0.268-0.978 0l-7.42-7.141-7.418 7.141z"></path>
+    </svg>
+</div><!-- b:m-page-scroller -->
+
+
+        <script src="/js/vendors/jquery-3.2.1.min.js"></script>
+        <script src="/bootstrap/js/popper-1.14.0.min.js"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/js/plugins.min.js"></script>
+        <script src="/js/app.js"></script>
+    
+    </body><!-- b:w-page -->
+</html>

@@ -473,6 +473,13 @@ body * {
 
 .card-snippet {
   display: block;
+  padding: 15px 21px;
+  text-decoration: none;
+}
+
+.card-snippet:hover {
+  border-radius: 5px;
+  background: rgba(0,0,0,0.1);
 }
 
 .card-snippet__img {
@@ -528,7 +535,7 @@ body * {
 }
 
 .grid__col {
-  padding: 15px 21px 15px 21px;
+  padding: 0px;
   text-align: center;
 }
 

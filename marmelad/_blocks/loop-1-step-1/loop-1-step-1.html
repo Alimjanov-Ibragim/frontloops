@@ -3,7 +3,7 @@
         <div block="grid">
             {% for item in deviceL1S1 %}
                 <div elem="col" class="col-4 col-lg-6 col-md-12">
-                    <div block="card-snippet">
+                    <a href="#" block="card-snippet">
                         <div elem="img">
                                 <img src="{{ item.img }}" alt="">
                         </div>
@@ -19,7 +19,7 @@
                             </div>
                             {{ item.price }} <span>{{ item.month }}</span>
                         </div>
-                    </div><!-- b:card-snippet -->
+                    </a><!-- b:card-snippet -->
                 </div>
             {% endfor %}
         </div><!-- b:grid -->        

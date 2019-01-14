@@ -1,0 +1,27 @@
+<div block="loop-1-step-1">
+    <div elem="section">
+        <div block="grid">
+            {% for item in deviceL1S1 %}
+                <div elem="col" class="col-4">
+                    <div block="card-snippet">
+                        <div elem="img">
+                                <img src="{{ item.img }}" alt="">
+                        </div>
+                        <div elem="name">
+                            {{ item.name }}
+                        </div>
+                        <div elem="desc">
+                            {{ item.desc }}
+                        </div>
+                        <div elem="price">
+                            <div class="cur">
+                                {{ item.cur }}
+                            </div>
+                            {{ item.price }} <span>{{ item.month }}</span>
+                        </div>
+                    </div><!-- b:card-snippet -->
+                </div>
+            {% endfor %}
+        </div><!-- b:grid -->        
+    </div>
+</div><!-- b:loop-1-step-1 -->

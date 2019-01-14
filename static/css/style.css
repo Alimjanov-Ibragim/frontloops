@@ -425,6 +425,10 @@ html {
   min-height: 100vh;
 }
 
+body * {
+  box-sizing: border-box;
+}
+
 .app {
   display: -ms-flexbox;
   display: flex;
@@ -465,6 +469,86 @@ html {
 .app__aside--right {
   -ms-flex: 0 0 300px;
       flex: 0 0 300px;
+}
+
+.card-snippet {
+  display: block;
+}
+
+.card-snippet__img {
+  margin-bottom: 40px;
+}
+
+.card-snippet__img img {
+  width: 75px;
+}
+
+.card-snippet__name {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #3787da;
+}
+
+.card-snippet__desc {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #85848a;
+}
+
+.card-snippet__price {
+  font-size: 34px;
+  font-weight: bold;
+  color: #3787da;
+}
+
+.card-snippet__price .cur {
+  margin-left: 0px;
+  padding: 10px 0 0;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.card-snippet__price span {
+  font-size: 12px;
+  color: #3787da;
+}
+
+.grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 -21px 0 -21px;
+}
+
+.grid__col {
+  padding: 15px 21px 15px 21px;
+  text-align: center;
+}
+
+.grid .col-4 {
+  -ms-flex: 0 0 28%;
+      flex: 0 0 28%;
+  max-width: 28%;
+}
+
+.loop-1-step-1 {
+  padding: 104px 70px 110px;
+  background: #458dd8;
+}
+
+.loop-1-step-1__section {
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 30px 40px 18px;
+  background: #fff;
+  border-radius: 5px;
 }
 
 .page-scroller {

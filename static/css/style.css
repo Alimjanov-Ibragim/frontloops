@@ -472,14 +472,23 @@ body * {
 }
 
 .card-snippet {
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   padding: 15px 21px;
+  height: 100%;
   text-decoration: none;
 }
 
 .card-snippet:hover {
   border-radius: 5px;
   background: rgba(0,0,0,0.1);
+}
+
+.card-snippet__top {
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
 }
 
 .card-snippet__img {
@@ -529,8 +538,6 @@ body * {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin: 0 -21px 0 -21px;
 }
 
@@ -540,9 +547,9 @@ body * {
 }
 
 .grid .col-4 {
-  -ms-flex: 0 0 28%;
-      flex: 0 0 28%;
-  max-width: 28%;
+  -ms-flex: 1 1 33.3%;
+      flex: 1 1 33.3%;
+  max-width: 33.3%;
 }
 
 .loop-1-step-1 {
@@ -617,16 +624,16 @@ body * {
 
 @media (max-width: 960px) {
   .grid .col-lg-6 {
-    -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+    -ms-flex: 1 1 50%;
+        flex: 1 1 50%;
     max-width: 50%;
   }
 }
 
 @media (max-width: 768px) {
   .grid .col-md-12 {
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+    -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
     max-width: 100%;
   }
 }

@@ -4,20 +4,28 @@
             {% for item in deviceL1S1 %}
                 <div elem="col" class="col-4 col-lg-6 col-md-12">
                     <a href="#" block="card-snippet">
-                        <div elem="img">
-                                <img src="{{ item.img }}" alt="">
-                        </div>
-                        <div elem="name">
-                            {{ item.name }}
-                        </div>
-                        <div elem="desc">
-                            {{ item.desc }}
-                        </div>
-                        <div elem="price">
-                            <div class="cur">
-                                {{ item.cur }}
+                        <div elem="top">
+                            
+                            <div elem="img">
+                                    <img src="{{ item.img }}" alt="">
                             </div>
-                            {{ item.price }} <span>{{ item.month }}</span>
+                            <div elem="name">
+                                {{ item.name }}
+                            </div>
+                            <div elem="desc">
+                                {{ item.desc }}
+                            </div>
+
+                        </div>
+                        <div elem="bot">
+                            
+                            <div elem="price">
+                                <div class="cur">
+                                    {{ item.cur }}
+                                </div>
+                                {{ item.price }} <span>{{ item.month }}</span>
+                            </div>
+                            
                         </div>
                     </a><!-- b:card-snippet -->
                 </div>

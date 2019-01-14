@@ -1,7 +1,6 @@
 .grid
     display flex
     flex-wrap wrap
-    justify-content space-around
     margin 0 -21px 0 -21px
     
     &__col
@@ -9,15 +8,15 @@
         text-align center
 
     .col-4
-        flex 0 0 28%
-        max-width 28%
+        flex 1 1 33.3%
+        max-width 33.3%
     
     @media ( max-width 960px )
         .col-lg-6
-            flex 0 0 50%
+            flex 1 1 50%
             max-width 50%
     
     @media ( max-width 768px )
         .col-md-12
-            flex 0 0 100%
+            flex 1 1 100%
             max-width 100%

@@ -549,7 +549,7 @@ body * {
 .loop-1-step-1__section {
   max-width: 990px;
   margin: 0 auto;
-  padding: 48px 40px 18px;
+  padding: 30px 30px 0;
   background: #fff;
   border-radius: 5px;
 }

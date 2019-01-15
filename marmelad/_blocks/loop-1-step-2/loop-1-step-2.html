@@ -8,9 +8,9 @@
         <div elem="title">
             payment method
         </div>
-        <div block="payment-card">
+        <div elem="payment-card">
             {% for item in payment %}
-                <a href="#" elem="item">
+                <button type="radio" block="payment">
                     <span elem="arrow"></span>
                     <span elem="img">
                         <img src="{{ item.img }}" alt="">
@@ -18,7 +18,7 @@
                     <span elem="name">
                         {{ item.name }}
                     </span>
-                </a>
+                </button>
             {% endfor %}
         </div><!-- b:payment-card -->
         <button block="payment-button">

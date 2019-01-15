@@ -596,43 +596,48 @@ html {
   background-size: 13px;
 }
 
-.payment-card__item {
+.payment {
   position: relative;
   display: block;
+  width: 100%;
   padding: 16px 40px 14px 29px;
+  border: none;
   border-top: 1px solid rgba(0,0,0,0.1);
+  outline: none;
+  text-align: left;
+  background: none;
 }
 
-.payment-card__item:hover {
+.payment:hover {
   background: rgba(0,0,0,0.1);
 }
 
-.payment-card__item:hover .payment-card__name {
+.payment:hover .payment__name {
   color: #000;
 }
 
-.payment-card__item:focus {
+.payment:focus {
   background: rgba(0,0,0,0.2);
 }
 
-.payment-card__item:focus .payment-card__name {
+.payment:focus .payment__name {
   color: #000;
 }
 
-.payment-card__item:active {
+.payment:active {
   background: rgba(90,85,85,0.1);
 }
 
-.payment-card__item:active .payment-card__name {
+.payment:active .payment__name {
   color: #000;
 }
 
-.payment-card__item:active .payment-card__arrow {
+.payment:active .payment__arrow {
   opacity: 1;
   transition: opacity 0.3s;
 }
 
-.payment-card__arrow {
+.payment__arrow {
   position: absolute;
   top: 15px;
   right: 19px;
@@ -643,17 +648,17 @@ html {
   background: url("../img/check.svg") 0 0 no-repeat;
 }
 
-.payment-card__img {
+.payment__img {
   display: inline-block;
   vertical-align: top;
   margin-right: 24px;
 }
 
-.payment-card__img img {
+.payment__img img {
   width: 40px;
 }
 
-.payment-card__name {
+.payment__name {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;

@@ -468,7 +468,6 @@ html {
 }
 
 body.app {
-  height: 729px;
   background: url("../img/background.jpg") 50% 0 no-repeat;
   background-size: cover;
 }

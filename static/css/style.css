@@ -467,10 +467,14 @@ html {
       flex: 0 0 300px;
 }
 
-.loop-1-step-2 {
-  padding: 100px 15px 315px;
+body.app {
+  height: 729px;
   background: url("../img/background.jpg") 50% 0 no-repeat;
   background-size: cover;
+}
+
+.loop-1-step-2 {
+  padding: 100px 15px 315px;
 }
 
 .loop-1-step-2__section {
@@ -659,8 +663,8 @@ html {
   position: absolute;
   top: 15px;
   right: 19px;
-  width: 18px;
-  height: 18px;
+  width: 21px;
+  height: 21px;
   opacity: 0;
   transition: opacity 0.3s;
   background: url("../img/check.svg") 0 0 no-repeat;

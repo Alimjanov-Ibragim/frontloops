@@ -1,0 +1,47 @@
+.payment-card
+    
+    &__item
+        position relative
+        display block
+        padding 16px 40px 14px 29px
+        border-top 1px solid rgba(0,0,0,.1)
+        
+        &:hover
+            background rgba(0,0,0,.1)
+            
+            .payment-card__name
+                color #000
+        
+        &:focus
+            .payment-card__name
+                color #000
+                
+            .payment-card__arrow
+                opacity 1
+                transition opacity .3s
+    
+    &__arrow
+        position absolute
+        top 15px
+        right 19px
+        width 18px
+        height 18px
+        opacity 0
+        transition opacity .3s
+        background url('../img/check.svg') 0 0 no-repeat
+
+    &__img
+        display inline-block
+        vertical-align top
+        margin-right 24px
+        
+        img
+            width 40px
+    
+    &__name
+        display inline-block
+        vertical-align top
+        font-size 14px
+        font-weight bold
+        color #afafaf
+        text-transform uppercase

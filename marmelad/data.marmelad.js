@@ -18,5 +18,19 @@ module.exports = {
       'danger',
     ],
   },
+  payment : [
+    {
+      'img' : 'img/visa.svg',
+      'name' : 'visa'
+    },
+    {
+      'img' : 'img/mastercard.svg',
+      'name' : 'mastercard'
+    },
+    {
+      'img' : 'img/maestro.svg',
+      'name' : 'maestro'
+    }
+  ],
   pageTitle: 'marmelad',
 };

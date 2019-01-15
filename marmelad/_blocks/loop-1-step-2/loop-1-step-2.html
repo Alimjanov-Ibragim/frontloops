@@ -1,0 +1,30 @@
+<div block="loop-1-step-2">
+    <div elem="section">
+        <ul block="payment-dots">
+            <li elem="dot"></li>
+            <li elem="dot"></li>
+            <li elem="dot"></li>
+        </ul><!-- b:dots -->
+        <div elem="title">
+            payment method
+        </div>
+        <div block="payment-card">
+            {% for item in payment %}
+                <a href="#" elem="item">
+                    <span elem="arrow"></span>
+                    <span elem="img">
+                        <img src="{{ item.img }}" alt="">
+                    </span>
+                    <span elem="name">
+                        {{ item.name }}
+                    </span>
+                </a>
+            {% endfor %}
+        </div><!-- b:payment-card -->
+        <button block="payment-button">
+            <span elem="text">
+                next step
+            </span>
+        </button>
+    </div>
+</div><!-- b:loop-1-step-2 -->

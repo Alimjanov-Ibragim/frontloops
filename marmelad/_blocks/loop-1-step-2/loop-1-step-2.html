@@ -10,7 +10,8 @@
         </div>
         <div elem="payment-card">
             {% for item in payment %}
-                <button type="radio" block="payment">
+                <label block="payment">
+                    <input elem="input" type="radio" checked="checked" name="radio">
                     <span elem="arrow"></span>
                     <span elem="img">
                         <img src="{{ item.img }}" alt="">
@@ -18,7 +19,7 @@
                     <span elem="name">
                         {{ item.name }}
                     </span>
-                </button>
+                </label>
             {% endfor %}
         </div><!-- b:payment-card -->
         <button block="payment-button">

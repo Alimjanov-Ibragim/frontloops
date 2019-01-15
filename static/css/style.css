@@ -653,7 +653,15 @@ body * {
 }
 
 @media (max-width: 480px) {
+  .grid {
+    margin: 0 0 0 -20px;
+  }
+
+  .grid__col {
+    padding: 0 0 20px 20px;
+  }
+
   .loop-1-step-1__section {
-    padding: 24px 20px 9px;
+    padding: 20px 20px 0;
   }
 }

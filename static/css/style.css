@@ -469,7 +469,8 @@ html {
 
 .loop-1-step-2 {
   padding: 100px 15px 315px;
-  background: url("../img/background.jpg") 0 0 no-repeat;
+  background: url("../img/background.jpg") 50% 0 no-repeat;
+  background-size: cover;
 }
 
 .loop-1-step-2__section {
@@ -610,11 +611,23 @@ html {
   color: #000;
 }
 
+.payment-card__item:focus {
+  background: rgba(0,0,0,0.2);
+}
+
 .payment-card__item:focus .payment-card__name {
   color: #000;
 }
 
-.payment-card__item:focus .payment-card__arrow {
+.payment-card__item:active {
+  background: rgba(90,85,85,0.1);
+}
+
+.payment-card__item:active .payment-card__name {
+  color: #000;
+}
+
+.payment-card__item:active .payment-card__arrow {
   opacity: 1;
   transition: opacity 0.3s;
 }

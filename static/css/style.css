@@ -476,14 +476,20 @@ body * {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  padding: 15px 21px;
+  margin: 0 10px;
+  padding: 15px 11px;
   height: 100%;
   text-decoration: none;
+  border-radius: 5px;
 }
 
 .card-snippet:hover {
-  border-radius: 5px;
   background: rgba(0,0,0,0.1);
+}
+
+.card-snippet:focus {
+  background: rgba(0,0,0,0.2);
+  outline: none;
 }
 
 .card-snippet__top {
@@ -492,6 +498,7 @@ body * {
 }
 
 .card-snippet__img {
+  display: block;
   margin-bottom: 40px;
 }
 
@@ -500,6 +507,7 @@ body * {
 }
 
 .card-snippet__name {
+  display: block;
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: bold;
@@ -509,28 +517,10 @@ body * {
 }
 
 .card-snippet__desc {
+  display: block;
   margin-bottom: 8px;
   font-size: 14px;
   color: #85848a;
-}
-
-.card-snippet__price {
-  font-size: 34px;
-  font-weight: bold;
-  color: #3787da;
-}
-
-.card-snippet__price .cur {
-  margin-left: 0px;
-  padding: 10px 0 0;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 16px;
-}
-
-.card-snippet__price span {
-  font-size: 12px;
-  color: #3787da;
 }
 
 .grid {
@@ -542,6 +532,7 @@ body * {
 }
 
 .grid__col {
+  margin-bottom: 12px;
   padding: 0px;
   text-align: center;
 }
@@ -620,6 +611,25 @@ body * {
 .page-scroller--visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+.price {
+  font-size: 34px;
+  font-weight: bold;
+  color: #3787da;
+}
+
+.price__cur {
+  margin-left: 0px;
+  padding: 10px 0 0;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.price__month {
+  font-size: 12px;
+  color: #3787da;
 }
 
 @media (max-width: 960px) {

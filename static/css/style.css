@@ -476,8 +476,7 @@ body * {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin: 0 10px;
-  padding: 15px 11px;
+  padding: 15px 10px;
   height: 100%;
   text-decoration: none;
   border-radius: 5px;
@@ -528,12 +527,11 @@ body * {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -21px 0 -21px;
+  margin: 0 0 0 -30px;
 }
 
 .grid__col {
-  margin-bottom: 12px;
-  padding: 0px;
+  padding: 0 0 30px 30px;
   text-align: center;
 }
 
@@ -551,7 +549,7 @@ body * {
 .loop-1-step-1__section {
   max-width: 990px;
   margin: 0 auto;
-  padding: 30px 40px 18px;
+  padding: 48px 40px 18px;
   background: #fff;
   border-radius: 5px;
 }
@@ -651,5 +649,11 @@ body * {
 @media (max-width: 640px) {
   .loop-1-step-1 {
     padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loop-1-step-1__section {
+    padding: 24px 20px 9px;
   }
 }

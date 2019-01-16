@@ -51,7 +51,7 @@ input:focus:-ms-input-placeholder {
 
 html {
   font-size: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   color: rgba(0,0,0,0.87);
   background-color: #fff;
@@ -90,7 +90,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   color: rgba(0,0,0,0.87);
   text-transform: none;
@@ -708,7 +708,6 @@ body.app {
   border-radius: 50%;
 }
 
-.payment-dots__dot:hover,
-.payment-dots__dot:focus {
+.payment-dots__dot:first-child {
   background: #403a3a;
 }

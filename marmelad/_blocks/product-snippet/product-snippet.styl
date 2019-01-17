@@ -1,0 +1,71 @@
+.product-snippet
+    position relative
+    z-index 1
+    padding 43px 70px 170px 72px
+
+    &:before
+        content ''
+        position absolute
+        bottom 0
+        left 0
+        right 0
+        z-index -1
+        width 100%
+        height 220px
+        background url('../img/bicycle.png') 0 28% no-repeat
+        background-size cover
+        
+    &__name
+        position relative
+        margin 0 0 13px
+        padding 0 50px 0 0
+        font-size 22px
+        font-weight bold
+        color #000
+        letter-spacing -0.7px
+
+    &__link-img
+        position absolute
+        top 0
+        right 0
+        width 40px
+        height 40px
+        background url('../img/account.svg') 50% 50% no-repeat
+        border 1px solid #dcd0d0
+        border-radius 50%
+        
+        &:hover
+            box-shadow 0px 0px 0px 3px #e4e0e0
+        
+        &:active,
+        &:focus
+            outline none
+            box-shadow 0px 0px 0px 3px #d2c7c7
+        
+    &__desc
+        margin 0 0 40px 0
+        font-size 13px
+        color #a59797
+        letter-spacing 0.3px
+        
+@media ( max-width 480px )
+    .product-snippet
+        padding 43px 40px 170px 40px
+        
+    .product-snippet:before
+        top auto
+        height auto
+        min-height 300px
+        background-position 50% 100%
+        background-size contain
+        
+
+@media ( max-width 440px )
+    .product-options__li > *
+        display block
+    
+    .product-options__li
+        flex-direction column
+
+    .product-options__title
+        margin-bottom 10px

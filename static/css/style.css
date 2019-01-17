@@ -467,9 +467,13 @@ html {
       flex: 0 0 300px;
 }
 
+body,
+.app__content {
+  background: #75b7d0;
+}
+
 .loop-1-step-3 {
   padding: 100px 20px 170px;
-  background: #75b7d0;
 }
 
 .loop-1-step-3__section {
@@ -582,8 +586,7 @@ html {
   padding: 43px 70px 170px 72px;
 }
 
-.product-snippet:before {
-  content: '';
+.product-snippet__img {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -593,6 +596,15 @@ html {
   height: 220px;
   background: url("../img/bicycle.png") 0 28% no-repeat;
   background-size: cover;
+  transition: height 0.9s;
+}
+
+.product-snippet__img:hover {
+  z-index: 1;
+  height: 100%;
+  background-size: contain;
+  background-position: 50% 100%;
+  transition: height 0.9s;
 }
 
 .product-snippet__name {
@@ -614,16 +626,19 @@ html {
   background: url("../img/account.svg") 50% 50% no-repeat;
   border: 1px solid #dcd0d0;
   border-radius: 50%;
+  transition: box-shadow 0.3s;
 }
 
 .product-snippet__link-img:hover {
   box-shadow: 0px 0px 0px 3px #e4e0e0;
+  transition: box-shadow 0.3s;
 }
 
 .product-snippet__link-img:active,
 .product-snippet__link-img:focus {
   outline: none;
   box-shadow: 0px 0px 0px 3px #d2c7c7;
+  transition: box-shadow 0.3s;
 }
 
 .product-snippet__desc {
@@ -638,7 +653,7 @@ html {
     padding: 43px 40px 170px 40px;
   }
 
-  .product-snippet:before {
+  .product-snippet__img {
     top: auto;
     height: auto;
     min-height: 300px;

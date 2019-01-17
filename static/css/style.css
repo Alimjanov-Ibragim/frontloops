@@ -664,6 +664,10 @@ body,
     background-position: 50% 100%;
     background-size: contain;
   }
+
+  .product-snippet__img:hover {
+    background-color: transparent;
+  }
 }
 
 @media (max-width: 440px) {

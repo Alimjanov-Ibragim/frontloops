@@ -1,0 +1,46 @@
+.chat-send
+    position relative
+    display flex
+    justify-content space-between
+    padding 16px 22px 20px
+
+    &:before
+        content ''
+        position absolute
+        top 0
+        left 22px
+        right 22px
+        border-top 1px solid #dddddd
+    
+    &__text
+        max-width 310px
+        width 100%
+        font-size 15px
+        color #000
+        outline none
+        border none
+        
+        &::-webkit-input-placeholder {color:#7a899d;}
+        &::-moz-placeholder          {color:#7a899d;}/* Firefox 19+ */
+        &:-moz-placeholder          {color:#7a899d;}/* Firefox 18- */
+        &:-ms-input-placeholder      {color:#7a899d;}
+    
+    &__button
+        max-width 45px
+        width 100%
+        margin 0
+        padding 0
+        font-size 15px
+        font-weight bold
+        color #6a96d8
+        text-transform uppercase
+        cursor pointer
+        outline none
+        border none
+        background none
+        
+        &:hover,
+        &:active
+            color #baccde
+        &:focus
+            color #557ab1

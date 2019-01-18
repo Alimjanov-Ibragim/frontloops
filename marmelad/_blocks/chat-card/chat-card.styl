@@ -1,0 +1,44 @@
+.chat-card
+    background #fff
+    
+    &__title
+        position relative
+        padding 24px 40px 20px 39px
+        font-size 14px
+        font-weight bold
+        color #fff
+        text-transform uppercase
+        background #6a96d8
+        
+        &:before
+            content ''
+            position absolute
+            top 47%
+            left 20px
+            width 6px
+            height 6px
+            border-radius 50%
+            background #fff
+    
+    &__close
+        position absolute
+        top 18px
+        right 18px
+        width auto
+        height auto
+        font-weight normal
+        cursor pointer
+        
+        &:hover,
+        &:focus,
+        &:active
+            .svg-icon
+                fill #fff
+                transition fill .3s
+        
+        .svg-icon
+            display block
+            width 24px
+            height 24px
+            fill #c3d4f1
+            transition fill .3s

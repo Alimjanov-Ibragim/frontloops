@@ -1,0 +1,91 @@
+.chat-message
+    padding 22px 20px 12px
+    height 367px
+    overflow-y auto
+    
+    &__title
+        position relative
+        padding 0 0 18px 0
+        font-size 12px
+        font-weight bold
+        color #dddddd
+        text-transform uppercase
+        text-align center
+        
+        &:before
+            content ''
+            position absolute
+            top 6px
+            left 0
+            right 60%
+            height 1px
+            background #dddddd
+        
+        &:after
+            content ''
+            position absolute
+            top 6px
+            right 0
+            left 60%
+            height 1px
+            background #dddddd
+    
+    &__item
+        display flex
+        flex-direction column
+        margin 13px 0 0
+
+    &__item:first-child
+        margin-top 0
+        
+    &__item:nth-child(2n)
+        align-items flex-end
+        
+        .chat-message__text
+            border-radius 3px 0px 3px 3px
+            background #f2f2f2
+    
+    &__time
+        padding 0 0 8px 0
+        font-size 12px
+        font-weight bold
+        color #aeaaaa
+        
+    &__text
+        position relative
+        max-width 75%
+        padding 11px 20px 14px 10px
+        font-size 12px
+        font-weight 600
+        color #000
+        line-height 16px
+        border-radius 0 3px 3px 3px
+        background #e6edf6
+        
+        &:before
+            content ''
+            position absolute
+            top 0
+            left -7px
+            width 0
+            height 0
+            border-style solid
+            border-width 0 7px 6px 0
+            border-color transparent #e6edf6 transparent transparent
+        
+    &__text.blocked
+        background #ffc2c1
+
+.chat-message__item:nth-child(2n) .chat-message__text.blocked
+    background #ffc2c1
+    border-radius 0 3px 3px 3px
+    
+    &:before
+        display none
+    
+.chat-message__item:nth-child(2n)
+    .chat-message__text:before
+        right -7px
+        left auto
+        border-width 0 0px 6px 7px
+        border-color transparent transparent transparent #f2f2f2

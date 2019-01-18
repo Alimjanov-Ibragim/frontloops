@@ -533,6 +533,16 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
+.chat-message::-webkit-scrollbar {
+  width: 5px;
+  cursor: pointer;
+}
+
+.chat-message::-webkit-scrollbar-thumb {
+  background: #8aa7cc;
+  border-radius: 3px;
+}
+
 .chat-message__title {
   position: relative;
   padding: 0 0 18px 0;
@@ -705,6 +715,14 @@ html {
 }
 
 .message-item:nth-child(2n) .message-item__text.blocked:before {
+  display: none;
+}
+
+.message-item:nth-child(1n) .message-item__text.blocked {
+  border-radius: 3px 0px 3px 3px;
+}
+
+.message-item:nth-child(1n) .message-item__text.blocked:before {
   display: none;
 }
 

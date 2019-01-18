@@ -29,11 +29,15 @@
         font-weight normal
         cursor pointer
         
-        &:hover,
-        &:focus,
-        &:active
+        &:hover
             .svg-icon
                 fill #fff
+                transition fill .3s
+        &:focus,
+        &:active
+            outline none
+            .svg-icon
+                fill #323a48
                 transition fill .3s
         
         .svg-icon

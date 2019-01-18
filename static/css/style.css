@@ -652,16 +652,16 @@ html {
   padding: 100px 20px 150px;
 }
 
-.message-item:first-child {
+.message-item--firstPerson {
   margin-top: 0;
 }
 
-.message-item:nth-child(2n) {
+.message-item--secondPerson {
   -ms-flex-align: end;
       align-items: flex-end;
 }
 
-.message-item:nth-child(2n) .message-item__text {
+.message-item--secondPerson .message-item__text {
   border-radius: 3px 0px 3px 3px;
   background: #f2f2f2;
 }
@@ -709,24 +709,24 @@ html {
   background: #ffc2c1;
 }
 
-.message-item:nth-child(2n) .message-item__text.blocked {
+.message-item--secondPerson .message-item__text.blocked {
   background: #ffc2c1;
   border-radius: 0 3px 3px 3px;
 }
 
-.message-item:nth-child(2n) .message-item__text.blocked:before {
+.message-item--secondPerson .message-item__text.blocked:before {
   display: none;
 }
 
-.message-item:nth-child(1n) .message-item__text.blocked {
+.message-item--firstPerson .message-item__text.blocked {
   border-radius: 3px 0px 3px 3px;
 }
 
-.message-item:nth-child(1n) .message-item__text.blocked:before {
+.message-item--firstPerson .message-item__text.blocked:before {
   display: none;
 }
 
-.message-item:nth-child(2n) .message-item__text:before {
+.message-item--secondPerson .message-item__text:before {
   right: -7px;
   left: auto;
   border-width: 0 0px 6px 7px;

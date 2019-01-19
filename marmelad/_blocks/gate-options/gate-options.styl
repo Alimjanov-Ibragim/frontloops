@@ -1,0 +1,45 @@
+.gate-options
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    padding 0 40px 16px
+    
+    &__top
+        display flex
+        flex 1 1 100%
+        justify-content space-between
+        
+    &__left
+        display flex
+        flex-direction column
+        padding-top 3px
+        
+        .gate-options__option
+            flex none
+            margin-bottom 25px
+    
+    &__option
+        flex 0 0 29%
+        margin-bottom 22px
+
+    &__title
+        margin-bottom 8px
+        font-size 11px
+        line-height 10px
+        color #aaa
+        text-transform uppercase
+    
+    &__desc
+        font-size 17px
+        line-height 15px
+        color #000
+        
+@media ( max-width 400px )
+    .gate-options__title
+        font-size 10px
+    
+    .gate-options__desc
+        font-size 13px
+    
+    .gate-options
+        padding 0 10px 0

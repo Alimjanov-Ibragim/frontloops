@@ -467,6 +467,15 @@ html {
       flex: 0 0 300px;
 }
 
+.app__content {
+  background: url("../img/background.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.loop-1-step-5 {
+  display: block;
+}
+
 .page-scroller {
   opacity: 0;
   position: fixed;

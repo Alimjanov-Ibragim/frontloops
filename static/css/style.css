@@ -492,7 +492,7 @@ html {
   background: #fff;
 }
 
-.chat-card__close {
+.chat-close {
   position: absolute;
   top: 18px;
   right: 18px;
@@ -502,23 +502,24 @@ html {
   cursor: pointer;
 }
 
-.chat-card__close:hover .svg-icon {
+.chat-close:hover .svg-icon {
   fill: #fff;
   transition: fill 0.3s;
 }
 
-.chat-card__close:focus,
-.chat-card__close:active {
+.chat-close:focus,
+.chat-close:active {
   outline: none;
+  color: #fff;
 }
 
-.chat-card__close:focus .svg-icon,
-.chat-card__close:active .svg-icon {
+.chat-close:focus .svg-icon,
+.chat-close:active .svg-icon {
   fill: #323a48;
   transition: fill 0.3s;
 }
 
-.chat-card__close .svg-icon {
+.chat-close .svg-icon {
   display: block;
   width: 24px;
   height: 24px;

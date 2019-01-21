@@ -512,6 +512,7 @@ html {
 }
 
 .article-content__top {
+  height: 100%;
   padding: 61px 40px 0;
   margin-bottom: 5px;
 }
@@ -596,7 +597,7 @@ html {
 
 .article-text {
   overflow-y: auto;
-  max-height: 90vh;
+  height: 100%;
   font-size: 21px;
   line-height: 30px;
   -webkit-overflow-scrolling: touch;
@@ -621,6 +622,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   max-width: 1000px;
+  max-height: 90vh;
   margin: 0 auto;
   background: #fff;
 }

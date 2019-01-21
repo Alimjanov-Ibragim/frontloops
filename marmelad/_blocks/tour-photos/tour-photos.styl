@@ -1,0 +1,57 @@
+.tour-photos
+    display flex
+    flex-direction column
+    flex 0 0 177px
+    margin-right 44px
+    
+    &__img
+        position relative
+        width 177px
+        margin-bottom 12px
+        cursor pointer
+        
+        &:before
+            content ''
+            position absolute
+            top 50%
+            left 50%
+            margin -18px 0 0 -19px
+            width 40px
+            height 40px
+            border-radius 50%
+            background #fff url('../img/play.svg') 50% 50% no-repeat
+        
+        img
+            max-width 100%
+    
+    &__view
+        position relative
+        align-self flex-start
+        padding 0 20px 0 0
+        font-size 13px
+        color #333
+        outline none
+        letter-spacing -1px
+        text-decoration none
+        text-transform uppercase
+        transition color .3s
+        
+        &:hover,
+        &:active,
+        &:focus
+            color #000
+            transition color .3s
+        
+        &:before
+            content ''
+            position absolute
+            top 2px
+            right 0
+            width 15px
+            height 15px
+            background url('../img/arrow-forward.svg') 0 0 no-repeat
+            background-size cover
+
+@media ( max-width 480px )
+    .tour-photos
+        margin 0 auto

@@ -1,0 +1,33 @@
+.tour-back
+    position absolute
+    top 33px
+    left 29px
+    padding 0 0 0 21px
+    font-size 13px
+    color #637b99
+    outline none
+    letter-spacing -1px
+    text-decoration none
+    text-transform uppercase
+    transition color .3s
+    
+    &:hover,
+    &:active,
+    &:focus
+        color #000
+        transition color .3s
+    
+    &:before
+        content ''
+        position absolute
+        top 0
+        left 0
+        width 16px
+        height 16px
+        background url('../img/arrow-back.svg') 0 0 no-repeat
+        background-size cover
+        
+@media ( max-width 425px )
+    .tour-back
+        top 11px
+        left 11px

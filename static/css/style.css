@@ -596,7 +596,7 @@ html {
 
 .article-text {
   overflow-y: auto;
-  height: 90vh;
+  max-height: 90vh;
   font-size: 21px;
   line-height: 30px;
   -webkit-overflow-scrolling: touch;

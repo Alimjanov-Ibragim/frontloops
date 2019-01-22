@@ -547,16 +547,21 @@ html {
 }
 
 .tour-back:hover,
-.tour-back:active,
+.tour-back:active {
+  color: #000;
+  transition: color 0.3s;
+}
+
 .tour-back:focus {
   color: #000;
+  text-decoration: underline;
   transition: color 0.3s;
 }
 
 .tour-back:before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   width: 16px;
   height: 16px;
@@ -642,6 +647,13 @@ html {
   height: 40px;
   border-radius: 50%;
   background: #fff url("../img/play.svg") 50% 50% no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tour-photos__img:hover:before {
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 .tour-photos__img img {
@@ -663,9 +675,14 @@ html {
 }
 
 .tour-photos__view:hover,
-.tour-photos__view:active,
+.tour-photos__view:active {
+  color: #000;
+  transition: color 0.3s;
+}
+
 .tour-photos__view:focus {
   color: #000;
+  text-decoration: underline;
   transition: color 0.3s;
 }
 
@@ -707,9 +724,14 @@ html {
 }
 
 .tour-snippet-nav__list li a:hover,
-.tour-snippet-nav__list li a:active,
+.tour-snippet-nav__list li a:active {
+  color: #000;
+  transition: color 0.3s;
+}
+
 .tour-snippet-nav__list li a:focus {
   color: #000;
+  text-decoration: underline;
   transition: color 0.3s;
 }
 
@@ -758,6 +780,22 @@ html {
     background-color: #8abefa;
   }
 
+  .tour-snippet-nav__list li a {
+    color: #fff;
+  }
+
+  .tour-snippet-nav__list li a:hover,
+  .tour-snippet-nav__list li a:active {
+    color: #000;
+    transition: color 0.3s;
+  }
+
+  .tour-snippet-nav__list li a:focus {
+    color: #000;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+
   .tour-snippet {
     -ms-flex-direction: column;
         flex-direction: column;
@@ -785,8 +823,18 @@ html {
     margin-top: 0;
   }
 
+  .tour-name {
+    margin-bottom: 20px;
+  }
+
   .tour-photos {
-    margin: 0 auto;
+    -ms-flex: none;
+        flex: none;
+    margin: 0 auto 10px 10%;
+  }
+
+  .tour-photos__img {
+    width: 70%;
   }
 
   .tour-text {
@@ -810,9 +858,13 @@ html {
   }
 
   .tour-snippet-nav__list {
-    -ms-flex-pack: center;
-        justify-content: center;
-    padding: 35px 20px 0 10px;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    padding: 35px 20px 0 20px;
+  }
+
+  .tour-snippet-nav {
+    padding-bottom: 15px;
   }
 
   .tour-snippet-nav__list li {

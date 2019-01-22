@@ -12,20 +12,33 @@
     transition color .3s
     
     &:hover,
-    &:active,
-    &:focus
+    &:active
         color #000
         transition color .3s
+    
+    &:focus
+            color #000
+            text-decoration underline
+            transition color .3s
     
     &:before
         content ''
         position absolute
-        top 0
+        top 2px
         left 0
         width 16px
         height 16px
         background url('../img/arrow-back.svg') 0 0 no-repeat
         background-size cover
+
+// @media ( max-width 760px )
+//     .tour-back
+//         color #000
+        
+//         &:focus,
+//         &:hover,
+//         &:active
+//             text-decoration underline
         
 @media ( max-width 425px )
     .tour-back

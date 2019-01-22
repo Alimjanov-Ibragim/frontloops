@@ -20,6 +20,13 @@
             height 40px
             border-radius 50%
             background #fff url('../img/play.svg') 50% 50% no-repeat
+            opacity 0
+            transition opacity 0.5s
+        
+        &:hover
+            &:before
+                opacity 1
+                transition opacity 0.5s
         
         img
             max-width 100%
@@ -37,9 +44,13 @@
         transition color .3s
         
         &:hover,
-        &:active,
+        &:active
+            color #000
+            transition color .3s
+
         &:focus
             color #000
+            text-decoration underline
             transition color .3s
         
         &:before
@@ -54,4 +65,8 @@
 
 @media ( max-width 480px )
     .tour-photos
-        margin 0 auto
+        flex none
+        margin 0 auto 10px 10%
+    
+    .tour-photos__img
+        width 70%

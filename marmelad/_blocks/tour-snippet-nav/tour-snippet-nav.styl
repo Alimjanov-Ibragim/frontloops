@@ -18,9 +18,12 @@
                 transition color .3s
                 
                 &:hover,
-                &:active,
+                &:active
+                    color #000
+                    transition color .3s
                 &:focus
                     color #000
+                    text-decoration underline
                     transition color .3s
         
         li.active a
@@ -31,11 +34,26 @@
         margin-bottom 20px
         padding-bottom 30px
         background-color #8abefa
+    
+    .tour-snippet-nav__list li a    
+        color #fff
+        
+        &:hover,
+        &:active
+            color #000
+            transition color .3s
+        &:focus
+            color #000
+            text-decoration underline
+            transition color .3s
 
 @media ( max-width 425px )
     .tour-snippet-nav__list
-        justify-content center
-        padding 35px 20px 0 10px
+        justify-content flex-start
+        padding 35px 20px 0 20px
+    
+    .tour-snippet-nav
+        padding-bottom 15px
     
     .tour-snippet-nav__list li
         margin-left 10px

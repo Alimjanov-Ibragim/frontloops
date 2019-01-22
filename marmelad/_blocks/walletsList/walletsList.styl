@@ -1,0 +1,33 @@
+.walletsList
+    position relative
+    flex 1 1 37%
+    background #f2f2f2
+    overflow-y auto
+    
+    &::-webkit-scrollbar
+        background-color #f2f2f2
+        width 16px
+    
+    /* scrollbar itself */
+    &::-webkit-scrollbar-thumb
+        background-color #babac0
+        border-radius 16px
+        border 4px solid #f2f2f2
+            
+    &__title
+        margin 0 0 36px
+        padding 35px 52px 0 41px
+        font-size 21px
+        letter-spacing -0.7px
+        
+    &__content
+        padding 0 24px 35px 40px
+
+@media ( max-width 640px )
+    .walletsList
+        flex 1 1 50%
+        overflow-y none
+
+@media ( max-width 425px )
+    .walletsList__content
+        padding 0 25px 35px

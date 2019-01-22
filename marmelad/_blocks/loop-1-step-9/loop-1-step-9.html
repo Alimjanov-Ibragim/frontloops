@@ -1,0 +1,45 @@
+<div block="loop-1-step-9">
+    <div elem="section">
+        <div block="wallets">
+            <div block="walletsList">
+                <div elem="title">
+                    My Wallets
+                </div>
+                <button block="wallPlus"><img src="img/plus.svg" alt=""></button>
+                <div elem="content">
+                    {% for item in loop1Step9.wallets %}
+                        <a href="#" block="wallet">
+                            <span elem="img"><img src="{{ item.img }}" alt=""></span>
+                            <span elem="num">{{ item.num }}</span>
+                            <span elem="date">{{ item.date }}</span>
+                        </a><!-- b:wallet -->
+                    {% endfor %}
+                </div>
+            </div><!-- b:walletsList -->
+            <div block="balanceList">
+                <div block="balanceCurrent">
+                    <div elem="title">Current Balance</div>
+                    <div block="sum">$729.<span>00</span></div>
+                </div><!-- b:balanceCurrent -->
+                <div elem="content">
+                    {% for item in loop1Step9.sumBalance %}
+                        <div block="sumBalance">
+                            <div elem="content">
+                                <a href="#" elem="before" {% if loop.index == 2 %} mods="active" {% endif %}></a>
+                                <div elem="title">
+                                    {{ item.title }}
+                                </div>
+                                <div elem="desc">
+                                    {{ item.desc }}
+                                </div>
+                            </div>
+                            <div elem="summery">
+                                <div block="sum" {% if loop.index == 2 %} mods="active" {% else %} mods="sumBalance" {% endif %}>{{ item.sum }}</div><!-- b:sum -->
+                            </div>
+                        </div><!-- b:sumBalance -->
+                    {% endfor %}
+                </div>
+            </div><!-- b:balanceList -->
+        </div><!-- b:wallets -->
+    </div>
+</div><!-- b:loop-1-step-9 -->

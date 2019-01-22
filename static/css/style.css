@@ -647,7 +647,7 @@ html {
   border: 1px solid #e8e8e8;
   border-radius: 50%;
   background: url("../img/minus.svg") 50% 50% no-repeat;
-  background-size: 15px;
+  background-size: 16px;
 }
 
 .sumBalance__before:hover,
@@ -663,7 +663,7 @@ html {
 
 .sumBalance__before--active {
   background: url("../img/plus.svg") 50% 50% no-repeat;
-  background-size: 15px;
+  background-size: 16px;
 }
 
 .sumBalance__title {
@@ -793,6 +793,10 @@ html {
   border-radius: 50%;
   background: none;
   cursor: pointer;
+}
+
+.wallPlus img {
+  vertical-align: top;
 }
 
 .wallPlus:hover,

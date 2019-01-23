@@ -1,0 +1,35 @@
+.top-menu
+    display flex
+    
+    &__nav
+        margin-right 43px
+        ul
+            display flex
+            
+            li
+                margin-right 34px
+                
+                &:last-child
+                    margin-right 0
+                    
+                a
+                    font-size 13px
+                    color #afacac
+                    line-height 1
+                    text-decoration none
+                    outline none
+                    
+                    &:hover,
+                    &:active
+                        color #000
+                    
+                    &:focus
+                        color #000
+                        text-decoration underline
+
+@media ( max-width 480px )
+    .top-menu
+        flex-direction column
+        
+    .top-menu__nav
+        margin-right 0

@@ -1,0 +1,82 @@
+.motivBlock
+    display flex
+    flex-direction column
+    max-width 250px
+    
+    &__title
+        margin 0 0 40px
+        font-size 14px
+        font-weight bold
+        color #000
+        line-height 12px
+        letter-spacing -0.7px
+        text-transform uppercase
+    
+    &__text
+        margin 0px 0 19px
+        font-size 13px
+        color #000
+        line-height 24px
+    
+    &__more
+        position relative
+        padding 0 0 0 45px
+        font-size 13px
+        font-weight bold
+        color #ea625c
+        letter-spacing -1.3px
+        line-height 12px
+        text-decoration none
+        text-transform uppercase
+        outline none
+        
+        &:hover,
+        &:active
+            color #c5504b
+            
+            &:before
+                background #c5504b
+
+        &:focus
+            color #c5504b
+            text-decoration underline
+            
+            &:before
+                background #c5504b
+        
+        &:before
+            content ''
+            position absolute
+            top 5px
+            left 2px
+            width 30px
+            height 2px
+            background #ea625c
+    
+    &__dots
+        
+        ul
+            display flex
+            padding 0 0 0 1px
+            
+            li
+                width 4px
+                height 4px
+                margin-right 11px
+                background #000
+                cursor pointer
+                    
+                &:last-child
+                    margin-right 0
+
+@media ( max-width 920px )
+    .motivBlock
+        max-width 220px
+    
+    .motivBlock__title
+        margin-bottom 20px
+
+@media ( max-width 700px )
+    .motivBlock
+        max-width 300px
+        margin 0 auto 30px

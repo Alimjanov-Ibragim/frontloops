@@ -1,0 +1,24 @@
+.editImg
+    flex 1 1 40%
+    max-width 400px
+    
+    img
+        max-width 100%
+        
+@media ( max-width 768px )
+    .editImg
+        max-width 290px
+
+@media ( max-width 700px )
+    .editImg
+        position relative
+        overflow hidden
+        max-width none
+        height 240px
+        margin 0 -20px
+        
+        img
+            position absolute
+            left 0
+            width 100%
+            transform translateY(-30%)

@@ -1,10 +1,11 @@
 .motivation
+    max-width 899px
+    margin 0 auto
     
     &__section
         display flex
-        justify-content space-between
-        max-width 899px
-        margin 43px auto 78px
+        flex-wrap wrap
+        margin 43px auto 78px -20px
         
 @media ( max-width 920px )
     .motivation__section
@@ -12,5 +13,12 @@
         
 @media ( max-width 700px )
     .motivation__section
-        flex-direction column
-        margin-bottom 0
+        display block
+        max-width 390px
+        margin 43px auto 10px auto
+        padding 0
+
+@media ( max-width 425px )
+    .motivation__section
+        max-width 410px
+        padding 0 20px

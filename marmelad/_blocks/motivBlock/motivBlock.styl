@@ -1,8 +1,10 @@
 .motivBlock
     display flex
     flex-direction column
-    max-width 250px
-    
+    flex 0 0 33.33%
+    max-width 33.33%
+    padding 0 0 20px 20px
+        
     &__title
         margin 0 0 40px
         font-size 14px
@@ -70,13 +72,10 @@
                     margin-right 0
 
 @media ( max-width 920px )
-    .motivBlock
-        max-width 220px
-    
     .motivBlock__title
         margin-bottom 20px
 
 @media ( max-width 700px )
     .motivBlock
-        max-width 300px
-        margin 0 auto 30px
+        max-width 100%
+        padding-left 0

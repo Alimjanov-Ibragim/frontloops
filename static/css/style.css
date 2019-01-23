@@ -481,7 +481,7 @@ html {
   background-color: #ebebeb;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .footer__section {
@@ -641,13 +641,17 @@ html {
   margin: 0 auto 44px;
 }
 
+.motivation {
+  max-width: 899px;
+  margin: 0 auto;
+}
+
 .motivation__section {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  max-width: 899px;
-  margin: 43px auto 78px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 43px auto 78px -20px;
 }
 
 .motivBlock {
@@ -655,7 +659,10 @@ html {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  max-width: 250px;
+  -ms-flex: 0 0 33.33%;
+      flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 0 20px 20px;
 }
 
 .motivBlock__title {
@@ -865,10 +872,6 @@ html {
 }
 
 @media (max-width: 920px) {
-  .footer {
-    background-size: cover;
-  }
-
   .footer__section {
     padding: 0 20px;
   }
@@ -889,10 +892,6 @@ html {
     padding: 0 20px;
   }
 
-  .motivBlock {
-    max-width: 220px;
-  }
-
   .motivBlock__title {
     margin-bottom: 20px;
   }
@@ -901,6 +900,22 @@ html {
 @media (max-width: 768px) {
   .editImg {
     max-width: 290px;
+  }
+
+  .footer__section {
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer__section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: rgba(0,0,0,0.5);
   }
 
   .headImg {
@@ -942,6 +957,17 @@ html {
     padding: 0 20px 20px;
   }
 
+  .headerEditBlock--middle {
+    margin: 20px auto 20px auto;
+  }
+
+  .headerEditBlock--foot {
+    -ms-flex: 1 1 390px;
+        flex: 1 1 390px;
+    max-width: 390px;
+    margin: 13px auto;
+  }
+
   .headImg {
     display: none;
   }
@@ -952,18 +978,23 @@ html {
   }
 
   .motivation__section {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin-bottom: 0;
+    display: block;
+    max-width: 390px;
+    margin: 43px auto 10px auto;
+    padding: 0;
   }
 
   .motivBlock {
-    max-width: 300px;
-    margin: 0 auto 30px;
+    max-width: 100%;
+    padding-left: 0;
   }
 }
 
 @media (max-width: 480px) {
+  .footer__section {
+    min-height: 410px;
+  }
+
   .top-menu {
     -ms-flex-direction: column;
         flex-direction: column;
@@ -971,5 +1002,12 @@ html {
 
   .top-menu__nav {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .motivation__section {
+    max-width: 410px;
+    padding: 0 20px;
   }
 }

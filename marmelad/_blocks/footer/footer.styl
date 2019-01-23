@@ -2,7 +2,7 @@
     background-color #ebebeb
     background-repeat no-repeat
     background-position 50% 50%
-    background-size 100% 100%
+    background-size cover
     
     &__section
         display flex
@@ -12,8 +12,24 @@
         min-height 727px
         
 @media ( max-width 920px )
-    .footer
-        background-size cover
-
     .footer__section
         padding 0 20px
+
+@media ( max-width 768px )
+    .footer__section
+        position relative
+        z-index 1
+        
+        &:before
+            content ''
+            position absolute
+            top 0
+            left 0
+            right 0
+            bottom 0
+            z-index -1
+            background rgba(0,0,0,.5)
+        
+@media ( max-width 480px )
+    .footer__section
+        min-height 410px

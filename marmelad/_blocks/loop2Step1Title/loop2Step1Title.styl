@@ -1,0 +1,58 @@
+.loop2Step1Title
+    &__section
+        padding 85px 0 0
+        
+    &__title
+        margin 0 0 42px 16.7%
+        overflow-y hidden
+        overflow-x auto
+        
+        &::-webkit-scrollbar
+            padding-top 5px
+            background-color #de8a89
+            width 16px
+
+        &::-webkit-scrollbar-thumb
+            background-color #fff
+            border-radius 16px
+            border 4px solid #de8a89
+
+        ul
+            display flex
+            
+            li
+                padding-left 66px
+                flex 0 0 auto
+                
+                &:first-child
+                    padding-left 0
+
+                a
+                    display block
+                    font-size 63px
+                    font-weight bold
+                    color #ecb9b8
+                    line-height 46px
+                    letter-spacing -4px
+                    text-transform uppercase
+                    text-decoration none
+                    outline none
+                    
+                    &:hover,
+                    &:active
+                        color #f1a4a2
+                    &:focus
+                        color #fb908e
+                        text-decoration underline
+                
+            li.active
+                a
+                    color #fff
+    
+    &__desc
+        max-width 550px
+        margin 0 auto 58px 16.7%
+        font-size 14px
+        line-height 22px
+        color #fff
+        letter-spacing 0.12px

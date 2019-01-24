@@ -510,12 +510,12 @@ html {
   display: flex;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  padding: 0 119px 0 0;
+  padding: 0 113px 0 0;
 }
 
 .loop2Step2Avatar {
-  -ms-flex: 0 0 63px;
-      flex: 0 0 63px;
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
   margin: -32px 0 28px 0;
 }
 
@@ -553,6 +553,10 @@ html {
   /* Firefox 18- */
 }
 
+.loop2Step2AvatarLabel__input:focus {
+  border: 1px dashed #7b7675;
+}
+
 .loop2Step2AvatarLabel__input::-webkit-input-placeholder {
   color: #7b7675;
 }
@@ -574,20 +578,20 @@ textarea.loop2Step2AvatarLabel__input {
   padding: 4px 0 0;
 }
 
-.loop2Step2AvatarLabel--firstName,
-.loop2Step2AvatarLabel--lastName {
+.loop2Step2AvatarLabel--w50 {
   -ms-flex: 1 1 50%;
       flex: 1 1 50%;
 }
 
 .loop2Step2Button {
   margin: 0;
-  padding: 0;
+  padding: 0 5px;
   font-size: 19px;
   color: #6f6a3f;
   border: none;
   outline: none;
   background: none;
+  border: 1px dashed transparent;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -602,11 +606,11 @@ textarea.loop2Step2AvatarLabel__input {
 
 .loop2Step2Button:focus {
   color: #403c1a;
-  text-decoration: underline;
+  border: 1px dashed #7b7675;
 }
 
 .loop2Step2Button--cancel {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 .loop2Step2Close {
@@ -727,8 +731,7 @@ textarea.loop2Step2AvatarLabel__input {
     max-width: 400px;
   }
 
-  .loop2Step2AvatarLabel--firstName,
-  .loop2Step2AvatarLabel--lastName {
+  .loop2Step2AvatarLabel--w50 {
     -ms-flex: 1 1 100%;
         flex: 1 1 100%;
   }

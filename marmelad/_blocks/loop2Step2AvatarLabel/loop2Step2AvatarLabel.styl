@@ -1,0 +1,39 @@
+.loop2Step2AvatarLabel
+    flex 1 1 100%
+    margin 0 0 19px
+    
+    &__title
+        margin 0 0 3px
+        font-size 12px
+        font-weight bold
+        color #aaa
+        text-transform uppercase
+    
+    &__input
+        width 100%
+        max-width 100%
+        padding 0 0 5px
+        font-size 14px
+        font-weight normal
+        color #000
+        outline none
+        border none
+        border-bottom 1px solid #7b7675
+        
+        &::-webkit-input-placeholder {color:#7b7675;}
+        &::-moz-placeholder          {color:#7b7675;}/* Firefox 19+ */
+        &:-moz-placeholder          {color:#7b7675;}/* Firefox 18- */
+        &:-ms-input-placeholder      {color:#7b7675;}
+    
+textarea.loop2Step2AvatarLabel__input
+    height 95px
+    padding 4px 0 0
+
+.loop2Step2AvatarLabel--firstName,
+.loop2Step2AvatarLabel--lastName
+    flex 1 1 50%
+
+@media ( max-width 480px )
+    .loop2Step2AvatarLabel--firstName,
+    .loop2Step2AvatarLabel--lastName
+        flex 1 1 100%

@@ -51,7 +51,7 @@ input:focus:-ms-input-placeholder {
 
 html {
   font-size: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   color: rgba(0,0,0,0.87);
   background-color: #fff;
@@ -90,7 +90,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   color: rgba(0,0,0,0.87);
   text-transform: none;
@@ -467,6 +467,183 @@ html {
       flex: 0 0 300px;
 }
 
+.app__content {
+  background: #2f2f2f;
+}
+
+.loop-2-step-2__section {
+  padding: 30px 0;
+}
+
+.loop2Step2Account {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 54px 40px 25px 60px;
+  background: #fdec51;
+}
+
+.loop2Step2Account__section {
+  margin: 0 -100px 0 0;
+}
+
+.loop2Step2Account__title {
+  position: relative;
+  margin: 0 0 54px;
+  padding: 0 100px 0 0;
+  font-size: 20px;
+  color: #000;
+}
+
+.loop2Step2Account__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 25px;
+  padding: 0 40px 19px;
+  box-shadow: -7px 7px 25px 1px rgba(0,0,0,0.3);
+  background: #fff;
+}
+
+.loop2Step2Account__bot {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  padding: 0 119px 0 0;
+}
+
+.loop2Step2Avatar {
+  -ms-flex: 0 0 63px;
+      flex: 0 0 63px;
+  margin: -32px 0 28px 0;
+}
+
+.loop2Step2Avatar img {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+}
+
+.loop2Step2AvatarLabel {
+  -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+  margin: 0 0 19px;
+}
+
+.loop2Step2AvatarLabel__title {
+  margin: 0 0 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.loop2Step2AvatarLabel__input {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 0 5px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #7b7675;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+
+.loop2Step2AvatarLabel__input::-webkit-input-placeholder {
+  color: #7b7675;
+}
+
+.loop2Step2AvatarLabel__input::-moz-placeholder {
+  color: #7b7675;
+}
+
+.loop2Step2AvatarLabel__input:-moz-placeholder {
+  color: #7b7675;
+}
+
+.loop2Step2AvatarLabel__input:-ms-input-placeholder {
+  color: #7b7675;
+}
+
+textarea.loop2Step2AvatarLabel__input {
+  height: 95px;
+  padding: 4px 0 0;
+}
+
+.loop2Step2AvatarLabel--firstName,
+.loop2Step2AvatarLabel--lastName {
+  -ms-flex: 1 1 50%;
+      flex: 1 1 50%;
+}
+
+.loop2Step2Button {
+  margin: 0;
+  padding: 0;
+  font-size: 19px;
+  color: #6f6a3f;
+  border: none;
+  outline: none;
+  background: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.loop2Step2Button:hover,
+.loop2Step2Button:active {
+  color: #403c1a;
+}
+
+.loop2Step2Button:focus {
+  color: #403c1a;
+  text-decoration: underline;
+}
+
+.loop2Step2Button--cancel {
+  margin-right: 40px;
+}
+
+.loop2Step2Close {
+  position: absolute;
+  top: 50%;
+  right: 103px;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.loop2Step2Close span {
+  display: inline-block;
+  vertical-align: initial;
+  font-size: 34px;
+  line-height: 34px;
+  color: #7e762a;
+}
+
+.loop2Step2Close:active,
+.loop2Step2Close:hover {
+  color: #5a541a;
+}
+
+.loop2Step2Close:focus {
+  border: 1px dashed #5a541a;
+}
+
 .page-scroller {
   opacity: 0;
   position: fixed;
@@ -522,4 +699,43 @@ html {
 .page-scroller--visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+@media (max-width: 640px) {
+  .loop2Step2Account {
+    padding: 54px 20px 25px;
+  }
+
+  .loop2Step2Account__section {
+    margin: 0;
+  }
+
+  .loop2Step2Account__bot {
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 0;
+  }
+
+  .loop2Step2Close {
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .loop2Step2Account {
+    padding: 25px 20px 25px;
+    max-width: 400px;
+  }
+
+  .loop2Step2AvatarLabel--firstName,
+  .loop2Step2AvatarLabel--lastName {
+    -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .loop2Step2Account {
+    max-width: 300px;
+  }
 }

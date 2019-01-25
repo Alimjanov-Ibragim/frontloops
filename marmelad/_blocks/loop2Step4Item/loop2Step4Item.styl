@@ -1,0 +1,37 @@
+.loop2Step4Item
+    display flex
+    justify-content space-between
+    align-items center
+    padding 8px 20px
+    min-height 59px
+    border none
+    border-bottom 1px solid #abb4c1
+    text-decoration none
+    
+    &:hover,
+    &:active
+        .loop2Step4Item__num
+            font-size 19px
+            color #000
+            transition font-size 0.3s
+    
+    &:focus
+        .loop2Step4Item__num,
+        .loop2Step4Item__title
+            font-size 19px
+            color #000
+            transition font-size 0.3s
+    
+    &:last-child
+        border-bottom none
+    
+    &__title
+        font-size 16px
+        font-weight 500
+        color #abb4c1
+    
+    &__num
+        font-size 16px
+        font-weight 500
+        color #abb4c1
+        transition font-size 0.3s

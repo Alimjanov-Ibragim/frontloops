@@ -1,0 +1,59 @@
+.loop2Step5Nav
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    z-index -1
+    display flex
+    flex-direction column
+    justify-content space-between
+    padding 20px 30px 37px 17px
+    max-width 80px
+    width 100%
+    background rgba(0,0,0,0.03)
+    box-shadow 0px 0px 11px 2px rgba(0,0,0,.03)
+    
+    &__prev,
+    &__next
+        position relative
+        z-index 1
+        outline none
+        cursor pointer
+        border none
+        background none
+        user-select none
+        
+        &:hover,
+        &:active,
+        &:focus
+            
+            span
+                text-decoration underline
+        
+        &:before
+            content ''
+            position absolute
+            left 4px
+            width 25px
+            height 25px
+            background-size cover
+        
+        span
+            font-size 18px
+            font-weight 500
+            color #fff
+            user-select none
+            
+    &__prev
+        padding 26px 0 0
+        
+        &:before
+            top 0
+            background url('../img/up.svg') 0 0 no-repeat
+    
+    &__next
+        padding 0 0 27px
+        
+        &:before
+            bottom 0
+            background url('../img/down.svg') 0 0 no-repeat        

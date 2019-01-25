@@ -51,7 +51,7 @@ input:focus:-ms-input-placeholder {
 
 html {
   font-size: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   color: rgba(0,0,0,0.87);
   background-color: #fff;
@@ -90,7 +90,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   color: rgba(0,0,0,0.87);
   text-transform: none;
@@ -467,59 +467,213 @@ html {
       flex: 0 0 300px;
 }
 
-.page-scroller {
-  opacity: 0;
-  position: fixed;
-  z-index: 1050;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 100%;
+.loop-2-step-5 {
+  position: relative;
+  z-index: 1;
   height: 100vh;
-  background-color: rgba(62,80,180,0.1);
+  background: url("../img/background.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.loop2Step5Body__num {
+  margin: 0 0 16px;
+  font-size: 105px;
+  line-height: 85px;
+  color: #000;
+}
+
+.loop2Step5Body__text {
+  margin: 0 0 60px;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #000;
+}
+
+.loop2Step5Body__view {
+  font-size: 15px;
+  line-height: 15px;
+  color: #000;
+}
+
+.loop2Step5Content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 71.2%;
+  right: 0;
+  z-index: -1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  padding: 20px 20px 23px 0;
+  text-align: right;
+  background: #ff0;
+}
+
+.loop2Step5Content:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -82px;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  width: 170px;
+  background: #ff0;
+  -webkit-transform: skewX(-12deg);
+          transform: skewX(-12deg);
+}
+
+.loop2Step5Nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 20px 30px 37px 17px;
+  max-width: 80px;
+  width: 100%;
+  background: rgba(0,0,0,0.03);
+  box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.03);
+}
+
+.loop2Step5Nav__prev,
+.loop2Step5Nav__next {
+  position: relative;
+  z-index: 1;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  cursor: pointer;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  transition: opacity 0.16s linear;
-  pointer-events: none;
 }
 
-.page-scroller__ctrl {
+.loop2Step5Nav__prev:hover span,
+.loop2Step5Nav__next:hover span,
+.loop2Step5Nav__prev:active span,
+.loop2Step5Nav__next:active span,
+.loop2Step5Nav__prev:focus span,
+.loop2Step5Nav__next:focus span {
+  text-decoration: underline;
+}
+
+.loop2Step5Nav__prev:before,
+.loop2Step5Nav__next:before {
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -12px;
-  margin-left: -12px;
-  transition: -webkit-transform 0.25s linear;
-  transition: transform 0.25s linear;
-  transition: transform 0.25s linear, -webkit-transform 0.25s linear;
-  fill: #666;
+  left: 4px;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+}
+
+.loop2Step5Nav__prev span,
+.loop2Step5Nav__next span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.loop2Step5Nav__prev {
+  padding: 26px 0 0;
+}
+
+.loop2Step5Nav__prev:before {
+  top: 0;
+  background: url("../img/up.svg") 0 0 no-repeat;
+}
+
+.loop2Step5Nav__next {
+  padding: 0 0 27px;
+}
+
+.loop2Step5Nav__next:before {
+  bottom: 0;
+  background: url("../img/down.svg") 0 0 no-repeat;
+}
+
+.loop2Step5Read {
+  position: relative;
+  padding: 0 36px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.loop2Step5Read:hover,
+.loop2Step5Read:active,
+.loop2Step5Read:focus {
+  text-decoration: underline;
+}
+
+.loop2Step5Read:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background: url("../img/more.svg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.loop2Step5View {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 99px;
+  width: 100%;
+  padding: 0 0 0 33px;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.loop2Step5View:hover,
+.loop2Step5View:active,
+.loop2Step5View:focus {
+  font-weight: bold;
+}
+
+.loop2Step5View:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 24px;
   height: 24px;
-}
-
-.page-scroller:hover,
-.page-scroller:focus {
-  background-color: rgba(62,80,180,0.12);
-}
-
-.page-scroller:active {
-  background-color: rgba(62,80,180,0.14);
-}
-
-.page-scroller--memorized .page-scroller__ctrl {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.page-scroller--memorized,
-.page-scroller--visible {
-  opacity: 1;
-  pointer-events: auto;
+  background: url("../img/view.svg") 0 0 no-repeat;
+  background-size: cover;
 }

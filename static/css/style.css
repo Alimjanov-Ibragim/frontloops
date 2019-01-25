@@ -51,7 +51,7 @@ input:focus:-ms-input-placeholder {
 
 html {
   font-size: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   color: rgba(0,0,0,0.87);
   background-color: #fff;
@@ -90,7 +90,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   color: rgba(0,0,0,0.87);
   text-transform: none;
@@ -465,6 +465,172 @@ html {
 .app__aside--right {
   -ms-flex: 0 0 300px;
       flex: 0 0 300px;
+}
+
+.app__content {
+  background: linear-gradient(to bottom, hsl(271.22, 66.22%, 70.98%), hsl(270.64, 66.26%, 70.99%) 1.97%, hsl(269.02, 66.37%, 71.02%) 7.41%, hsl(266.52, 66.53%, 71.07%) 15.63%, hsl(263.32, 66.74%, 71.13%) 25.93%, hsl(259.58, 66.98%, 71.2%) 37.62%, hsl(255.48, 67.24%, 71.28%) 50%, hsl(251.21, 67.49%, 71.35%) 62.38%, hsl(247.02, 67.74%, 71.42%) 74.07%, hsl(243.16, 67.95%, 71.48%) 84.38%, hsl(239.96, 68.14%, 71.51%) 92.59%, hsl(237.85, 69.02%, 70.84%) 98.03%, hsl(237.12, 69.33%, 70.59%));
+}
+
+.loop-2-step-3__section {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 96px 20px;
+  box-sizing: content-box;
+}
+
+.loop2Step3Arrow {
+  position: absolute;
+  top: 30px;
+  right: 12px;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px dashed transparent;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.loop2Step3Arrow:focus {
+  border-color: #fff;
+}
+
+.loop2Step3Files {
+  border-radius: 5px;
+  box-shadow: 0px 0px 32px -9px #000;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.loop2Step3Navigation {
+  background: #5f5280;
+}
+
+.loop2Step3Navigation ul {
+  position: relative;
+  padding: 27px 0 13px 22px;
+}
+
+.loop2Step3Navigation ul:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 31px;
+  width: 2px;
+  background: #afa9c0;
+}
+
+.loop2Step3Navigation ul li {
+  margin: 0 0 14px;
+}
+
+.loop2Step3Navigation ul li a {
+  position: relative;
+  z-index: 5;
+  display: block;
+  padding: 0 0 0 32px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #afa9c0;
+  text-decoration: none;
+  outline: none;
+}
+
+.loop2Step3Navigation ul li a:hover,
+.loop2Step3Navigation ul li a:active {
+  color: #fff;
+}
+
+.loop2Step3Navigation ul li a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.loop2Step3Navigation ul li a .before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0;
+  border-radius: 50%;
+  background: #5f5280;
+}
+
+.loop2Step3Navigation ul li a .before:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+}
+
+.loop2Step3Title {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 40px 19px 20px;
+  background: linear-gradient(to bottom, hsl(274.38, 51.45%, 66.08%), hsl(274.32, 51.4%, 66.06%) 1.97%, hsl(274.17, 51.29%, 66.01%) 7.41%, hsl(273.93, 51.13%, 65.93%) 15.63%, hsl(273.62, 50.92%, 65.83%) 25.93%, hsl(273.27, 50.68%, 65.71%) 37.62%, hsl(272.9, 50.43%, 65.59%) 50%, hsl(272.53, 50.18%, 65.47%) 62.38%, hsl(272.17, 49.95%, 65.35%) 74.07%, hsl(271.85, 49.75%, 65.25%) 84.38%, hsl(271.6, 49.58%, 65.17%) 92.59%, hsl(271.43, 49.48%, 65.12%) 98.03%, hsl(271.36, 49.44%, 65.1%));
+}
+
+.loop2Step3Title__text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.loop2Step3Title__img {
+  position: relative;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 0;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.loop2Step3Title__img:before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 11px;
+  z-index: -1;
+  width: 2px;
+  height: 50px;
+  background: #fff;
+}
+
+.loop2Step3Title__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  -webkit-transform: translate(-50%, -58%);
+          transform: translate(-50%, -58%);
+}
+
+.loop2Step3Title--foot {
+  padding: 20px 40px 20px 20px;
+}
+
+.loop2Step3Title--foot .loop2Step3Title__img:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 11px;
+  z-index: -1;
+  width: 2px;
+  height: 70px;
+  background: #fff;
 }
 
 .page-scroller {

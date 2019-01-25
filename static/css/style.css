@@ -554,7 +554,8 @@ html {
 }
 
 .loop2Step2AvatarLabel__input:focus {
-  border: 1px dashed #7b7675;
+  border-color: #03a9f4;
+  border-style: none none dashed none;
 }
 
 .loop2Step2AvatarLabel__input::-webkit-input-placeholder {

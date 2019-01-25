@@ -558,6 +558,10 @@ html {
   border-style: none none dashed none;
 }
 
+.loop2Step2AvatarLabel__input:focus + .loop2Step2AvatarLabel__title {
+  color: #000;
+}
+
 .loop2Step2AvatarLabel__input::-webkit-input-placeholder {
   color: #7b7675;
 }
@@ -572,6 +576,13 @@ html {
 
 .loop2Step2AvatarLabel__input:-ms-input-placeholder {
   color: #7b7675;
+}
+
+.loop2Step2AvatarLabel {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
 }
 
 textarea.loop2Step2AvatarLabel__input {

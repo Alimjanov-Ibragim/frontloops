@@ -23,11 +23,18 @@
         &:focus
             border-color #03a9f4
             border-style none none dashed none
+            
+            + .loop2Step2AvatarLabel__title
+                color #000
         
         &::-webkit-input-placeholder {color:#7b7675;}
         &::-moz-placeholder          {color:#7b7675;}/* Firefox 19+ */
         &:-moz-placeholder          {color:#7b7675;}/* Firefox 18- */
         &:-ms-input-placeholder      {color:#7b7675;}
+        
+.loop2Step2AvatarLabel
+    display flex
+    flex-direction column-reverse
     
 textarea.loop2Step2AvatarLabel__input
     height 95px

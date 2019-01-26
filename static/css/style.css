@@ -473,6 +473,15 @@ html {
   height: 100vh;
   background: url("../img/background.jpg") 0 0 no-repeat;
   background-size: cover;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.loop2Step5Body {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
 }
 
 .loop2Step5Body__num {
@@ -499,35 +508,22 @@ html {
 .loop2Step5Content {
   position: absolute;
   top: 0;
-  bottom: 0;
-  left: 71.2%;
   right: 0;
-  z-index: -1;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: end;
-      align-items: flex-end;
-  padding: 20px 20px 23px 0;
+  height: 100vh;
   text-align: right;
-  background: #ff0;
 }
 
 .loop2Step5Content:before {
   content: '';
-  position: absolute;
-  top: 0;
-  left: -82px;
-  right: 0;
-  bottom: 0;
-  z-index: -2;
-  width: 170px;
+  display: block;
   background: #ff0;
-  -webkit-transform: skewX(-12deg);
-          transform: skewX(-12deg);
+  opacity: 0.8;
+  width: 650px;
+  height: 100vh;
+  position: absolute;
+  right: -160px;
+  -webkit-transform: skew(-12deg);
+          transform: skew(-12deg);
 }
 
 .loop2Step5Nav {
@@ -612,7 +608,9 @@ html {
 }
 
 .loop2Step5Read {
-  position: relative;
+  position: absolute;
+  top: 22px;
+  right: 21px;
   padding: 0 36px 0 0;
   font-size: 18px;
   line-height: 18px;

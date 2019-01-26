@@ -471,7 +471,7 @@ html {
   position: relative;
   z-index: 1;
   height: 100vh;
-  background: url("../img/background.jpg") 0 0 no-repeat;
+  background: url("../img/background-min1.jpg") 50% 50% no-repeat;
   background-size: cover;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;

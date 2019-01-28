@@ -1,0 +1,61 @@
+.loop2Step8Button
+    flex 0 0 60px
+    margin 3px 0 0
+    
+
+    &__label
+        position relative
+        display block
+        width 60px
+        height 35px
+        outline none
+        cursor pointer
+        
+        // &:focus
+    
+        &:before
+            content ""
+            position relative
+            top 0px
+            left 3px
+            width 60px
+            height 35px
+            display block
+            background #fff
+            border-radius 25px
+            border 1px solid #ebebeb
+            transition background .2s ease
+        span
+            position absolute
+            top 0
+            left 0
+            width 35px
+            height 35px
+            display block
+            background white
+            border-radius 50%
+            border 2px solid #ebebeb
+            transition all .2s ease
+
+.loop2Step8Button__cbxbox
+    position absolute
+    opacity 0
+    left -5000px
+
+.loop2Step8Button__cbxbox:checked + .loop2Step8Button__label
+    &:before
+        background #5187f2
+    span
+        background #fff
+        transform translateX(30px)
+        &:before
+            opacity 0
+            transition all .4s ease
+
+
+.loop2Step8Button__cbxbox:focus + .loop2Step8Button__label
+    border-radius 25px
+    box-shadow 1px 1px 1px 1px rgba(#000,0.5)
+    
+    &:before
+        left 0

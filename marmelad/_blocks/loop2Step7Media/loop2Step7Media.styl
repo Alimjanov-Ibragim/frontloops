@@ -1,0 +1,46 @@
+.loop2Step7Media
+    position relative
+    z-index 5
+    display flex
+    flex-direction column
+    justify-content center
+    height 100%
+    padding 0 116px
+    background-color #ebebeb
+    background-position 50% 50%
+    background-repeat no-repeat
+    background-size cover
+
+    &:before
+        content ''
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        z-index -1
+        background rgba(#000,0.5)
+
+    
+    &__title
+        margin 0 0 14px
+        font-size 30px
+        line-height 30px
+        font-weight bold
+        color #fff
+    
+    &__subtitle
+        margin 0 0 23px
+        font-size 14px
+        font-weight 500
+        line-height 14px
+        letter-spacing 0.1px
+        color #fff
+        
+@media ( max-width 980px )
+    .loop2Step7Media
+        padding 70px 30px
+
+@media ( max-width 500px )
+    .loop2Step7Media
+        padding 50px 20px

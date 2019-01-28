@@ -1,0 +1,36 @@
+.loop2Step7Button
+    position relative
+    display flex
+    align-self flex-start
+    margin 0
+    padding 18px 23px 17px 57px
+    font-size 15px
+    line-height 15px
+    letter-spacing -0.5px
+    color #fff
+    text-align left
+    background rgba(105,167,150,.8)
+    outline none
+    border none
+    border-radius 20px
+    cursor pointer
+    transition background 0.3s
+    
+    &:hover,
+    &:active
+        background rgba(105,167,150,1)
+        transition background 0.3s
+    
+    &:focus
+        background #4b8474
+        transition background 0.3s
+    
+    &:before
+        content ''
+        position absolute
+        top 50%
+        left 24px
+        margin -11px 0 0
+        width 24px
+        height 24px
+        background url('../img/file.svg') 0 0 no-repeat

@@ -479,6 +479,7 @@ html {
 .loop2Step9Burger {
   display: -ms-flexbox;
   display: flex;
+  margin: 0 0 0 -6px;
   padding: 5px;
   border: 1px dashed transparent;
   background: none;
@@ -539,6 +540,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  max-width: 220px;
   width: 30%;
   height: 2px;
   background: #fff;
@@ -546,7 +548,7 @@ html {
 
 .loop2Step9Distance__car {
   position: absolute;
-  top: -20px;
+  top: -24px;
   right: -10px;
   width: 20px;
   height: 20px;
@@ -556,7 +558,7 @@ html {
   max-width: 450px;
   width: 100%;
   margin: 0 auto;
-  padding: 30px 30px;
+  padding: 25px 30px 30px;
   background: #fff;
 }
 
@@ -567,7 +569,7 @@ html {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  margin: 0 0 22px 0;
+  margin: 0 0 18px 0;
 }
 
 .loop2Step9GoogleMap__title {
@@ -750,6 +752,7 @@ html {
 .loop2Step9Search {
   display: -ms-flexbox;
   display: flex;
+  margin: 0 -6px 0 0;
   padding: 5px;
   border: 1px dashed transparent;
   background: none;
@@ -828,4 +831,42 @@ html {
 .page-scroller--visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+@media (max-width: 480px) {
+  .loop-2-step-9__section {
+    padding: 143px 0 60px;
+  }
+
+  .loop2Step9GoogleMap {
+    max-width: 470px;
+  }
+
+  .loop2Step9Distance {
+    -ms-flex-order: -1;
+        order: -1;
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0 0 10px;
+  }
+
+  .loop2Step9Map {
+    margin: 0 -30px 40px;
+    border-radius: 0;
+  }
+
+  .loop2Step9Map__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .loop2Step9Map__bot {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+
+  .loop2Step9Map__distance {
+    text-align: right;
+  }
 }

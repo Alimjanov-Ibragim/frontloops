@@ -1535,7 +1535,7 @@ html {
 .loop2Step10Posts--follow .loop2Step10PostsItem__button {
   position: relative;
   display: block;
-  padding: 0 0 0 25px;
+  padding: 2px 0 2px 25px;
   font-size: 14px;
   line-height: 14px;
   color: #68aeef;

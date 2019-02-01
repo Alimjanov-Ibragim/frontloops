@@ -496,6 +496,10 @@ html {
   border-radius: 5px;
   outline: none;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .loop3Step1Button:hover,
@@ -698,6 +702,10 @@ html {
   top: 152px;
   left: -108px;
   width: 480px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .loop3Step1Sneaker__img img {
@@ -722,6 +730,10 @@ html {
   border-radius: 50%;
   outline: none;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .loop3Step1Sneaker__plus:hover,
@@ -815,6 +827,10 @@ html {
   line-height: 330px;
   color: #e987ab;
   text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .loop3Step1View__nav {

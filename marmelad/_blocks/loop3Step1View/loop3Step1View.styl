@@ -1,0 +1,39 @@
+.loop3Step1View
+    position relative
+    z-index 2
+    display flex
+    flex-direction column
+    height 100%
+    
+    &__logo
+        position absolute
+        top 13px
+        left 14px
+        padding 0 5px
+        width 50px
+        outline none
+        border 1px dashed transparent
+
+        &:focus
+            border-color #fff
+        
+        img
+            max-width 100%
+        
+    &__num
+        position absolute
+        top 0
+        left 0
+        right 0
+        z-index -1
+        font-size 330px
+        line-height 330px
+        color #e987ab
+        text-align center
+    
+    &__nav
+        position absolute
+        bottom 31px
+        left 0
+        right 0
+        text-align center

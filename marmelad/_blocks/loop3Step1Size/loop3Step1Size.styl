@@ -1,0 +1,92 @@
+.loop3Step1Size
+    display flex
+    align-items center
+    
+    &__title
+        flex 0 0 70px
+        font-size 18px
+        line-height 18px
+        color #ababab
+    
+    &__items
+        display flex
+        flex-wrap wrap
+        flex 1
+    
+    &__item
+        margin 0 35px 0 0
+        padding 2px
+        font-size 26px
+        line-height 26px
+        color #ababab
+        border 2px solid transparent
+        border-radius 5px
+        
+        &:hover,
+        &:active
+            border-color #e26796
+            color #e26796
+        
+        &:focus
+            border-color #e26796
+            color #e26796
+        
+        &:last-child
+            margin-right 0
+
+.loop3Step1Size--size
+    margin 0 0 23px
+    
+    .loop3Step1Size__title
+        margin 0 40px 0 0
+
+.loop3Step1Size--amount
+    margin 0 0 57px
+    
+    .loop3Step1Size__items
+        flex 0 0 auto
+
+    .loop3Step1Size__title
+        margin 0 50px 0 0
+    
+    .loop3Step1Size__items
+        position relative
+        
+    .loop3Step1Size__item
+        margin-right 0
+        letter-spacing -0.5px
+        border none
+        
+        &:hover,
+        &:active
+            border-color transparent
+            color #000
+        
+        &:focus
+            border-color transparent
+            color #000
+        
+    .loop3Step1Size__nav
+        position absolute
+        top 50%
+        left 0
+        right 0
+        margin-top -5px
+        
+    .loop3Step1Size__prev,
+    .loop3Step1Size__next
+        position absolute
+        width 0
+        height 0
+        border-style solid
+        cursor pointer
+        
+    .loop3Step1Size__prev
+        left -21px
+        border-width 6px 7px 6px 0
+        border-color transparent #e26796 transparent transparent
+        
+    .loop3Step1Size__next
+        right -21px
+        border-width 6px 0 6px 7px
+        border-color transparent transparent transparent #e26796

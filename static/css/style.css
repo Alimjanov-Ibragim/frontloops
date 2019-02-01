@@ -51,7 +51,7 @@ input:focus:-ms-input-placeholder {
 
 html {
   font-size: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   color: rgba(0,0,0,0.87);
   background-color: #fff;
@@ -90,7 +90,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   color: rgba(0,0,0,0.87);
   text-transform: none;
@@ -465,6 +465,364 @@ html {
 .app__aside--right {
   -ms-flex: 0 0 300px;
       flex: 0 0 300px;
+}
+
+.loop-3-step-1 {
+  background: #4d26e6;
+}
+
+.loop-3-step-1__section {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 140px 20px 90px;
+  box-sizing: content-box;
+}
+
+.loop3Step1Button {
+  max-width: 300px;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 19px 40px 20px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #e74c3c;
+  border: 1px dashed transparent;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.loop3Step1Button:hover,
+.loop3Step1Button:active {
+  background: #b74033;
+}
+
+.loop3Step1Button:focus {
+  background: #ec9b93;
+}
+
+.loop3Step1Info__title {
+  margin: 0 0 14px;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 44px;
+  letter-spacing: -1.4px;
+  color: #000;
+}
+
+.loop3Step1Info__text {
+  margin: 0 0 41px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: #000;
+}
+
+.loop3Step1Nav {
+  display: block;
+}
+
+.loop3Step1Nav__dot {
+  display: inline-block;
+  vertical-align: top;
+  width: 15px;
+  height: 15px;
+  margin: 0 8px;
+  background: #eea5bf;
+  border: 1px dashed transparent;
+  border-radius: 50%;
+  outline: none;
+}
+
+.loop3Step1Nav__dot:hover,
+.loop3Step1Nav__dot:active {
+  background: #fff;
+}
+
+.loop3Step1Nav__dot:focus {
+  background: #fff;
+  border-color: #e26796;
+}
+
+.loop3Step1Price {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0 0 33px;
+}
+
+.loop3Step1Price__cur {
+  margin: 0 13px 0 0;
+  font-size: 21px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+
+.loop3Step1Price__old {
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.4px;
+  color: #abb4c1;
+}
+
+.loop3Step1Size {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.loop3Step1Size__title {
+  -ms-flex: 0 0 70px;
+      flex: 0 0 70px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ababab;
+}
+
+.loop3Step1Size__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex: 1 1;
+      flex: 1 1;
+}
+
+.loop3Step1Size__item {
+  margin: 0 35px 0 0;
+  padding: 2px;
+  font-size: 26px;
+  line-height: 26px;
+  color: #ababab;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.loop3Step1Size__item:hover,
+.loop3Step1Size__item:active {
+  border-color: #e26796;
+  color: #e26796;
+}
+
+.loop3Step1Size__item:focus {
+  border-color: #e26796;
+  color: #e26796;
+}
+
+.loop3Step1Size__item:last-child {
+  margin-right: 0;
+}
+
+.loop3Step1Size--size {
+  margin: 0 0 23px;
+}
+
+.loop3Step1Size--size .loop3Step1Size__title {
+  margin: 0 40px 0 0;
+}
+
+.loop3Step1Size--amount {
+  margin: 0 0 57px;
+}
+
+.loop3Step1Size--amount .loop3Step1Size__items {
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+}
+
+.loop3Step1Size--amount .loop3Step1Size__title {
+  margin: 0 50px 0 0;
+}
+
+.loop3Step1Size--amount .loop3Step1Size__items {
+  position: relative;
+}
+
+.loop3Step1Size--amount .loop3Step1Size__item {
+  margin-right: 0;
+  letter-spacing: -0.5px;
+  border: none;
+}
+
+.loop3Step1Size--amount .loop3Step1Size__item:hover,
+.loop3Step1Size--amount .loop3Step1Size__item:active {
+  border-color: transparent;
+  color: #000;
+}
+
+.loop3Step1Size--amount .loop3Step1Size__item:focus {
+  border-color: transparent;
+  color: #000;
+}
+
+.loop3Step1Size--amount .loop3Step1Size__nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -5px;
+}
+
+.loop3Step1Size--amount .loop3Step1Size__prev,
+.loop3Step1Size--amount .loop3Step1Size__next {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.loop3Step1Size--amount .loop3Step1Size__prev {
+  left: -21px;
+  border-width: 6px 7px 6px 0;
+  border-color: transparent #e26796 transparent transparent;
+}
+
+.loop3Step1Size--amount .loop3Step1Size__next {
+  right: -21px;
+  border-width: 6px 0 6px 7px;
+  border-color: transparent transparent transparent #e26796;
+}
+
+.loop3Step1Sneaker {
+  position: absolute;
+  top: 152px;
+  left: -108px;
+  width: 480px;
+}
+
+.loop3Step1Sneaker__img img {
+  max-width: 100%;
+}
+
+.loop3Step1Sneaker__plus {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fff;
+  background: #5429f2;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.loop3Step1Sneaker__plus:hover,
+.loop3Step1Sneaker__plus:active {
+  background: #886ee8;
+}
+
+.loop3Step1Sneaker__plus:focus {
+  background: #2b1382;
+}
+
+.loop3Step1Sneaker__plus--first {
+  position: absolute;
+  top: 68px;
+  left: 125px;
+}
+
+.loop3Step1Sneaker__plus--second {
+  position: absolute;
+  top: 226px;
+  left: 211px;
+}
+
+.loop3Step1Sneaker__plus--third {
+  position: absolute;
+  bottom: 148px;
+  right: 70px;
+}
+
+.loop3Step1Sneakers {
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.loop3Step1Sneakers__view {
+  -ms-flex: 0 0 47%;
+      flex: 0 0 47%;
+  max-width: 47%;
+}
+
+.loop3Step1Sneakers__info {
+  -ms-flex: 0 0 53%;
+      flex: 0 0 53%;
+  max-width: 53%;
+  padding: 60px 40px;
+}
+
+.loop3Step1Sneakers__view {
+  margin: -40px 0;
+  background: #e26796;
+  border-radius: 5px;
+}
+
+.loop3Step1View {
+  position: relative;
+  z-index: 2;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%;
+}
+
+.loop3Step1View__logo {
+  position: absolute;
+  top: 13px;
+  left: 14px;
+  padding: 0 5px;
+  width: 50px;
+  outline: none;
+  border: 1px dashed transparent;
+}
+
+.loop3Step1View__logo:focus {
+  border-color: #fff;
+}
+
+.loop3Step1View__logo img {
+  max-width: 100%;
+}
+
+.loop3Step1View__num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  font-size: 330px;
+  line-height: 330px;
+  color: #e987ab;
+  text-align: center;
+}
+
+.loop3Step1View__nav {
+  position: absolute;
+  bottom: 31px;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .page-scroller {

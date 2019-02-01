@@ -1,0 +1,40 @@
+.grid
+    display flex
+    flex-wrap wrap
+    margin-left -20px
+    
+    > div
+        padding 0 0 0 20px
+    
+    &__left
+        flex 0 0 22.1%
+        max-width 22.1%
+        
+    &__right
+        flex 0 0 15.5%
+        max-width 15.5%
+    
+    &__main
+        flex 0 0 62.3%
+        max-width 62.3%
+
+@media ( max-width 850px )
+    .grid__left
+        display none
+        
+    .grid__right
+        flex 0 0 25%
+        max-width 25%
+    
+    .grid__main
+        flex 0 0 75%
+        max-width 75%
+
+@media ( max-width 480px )
+    .grid__right
+        display none
+    
+    .grid__main
+        flex 0 0 100%
+        max-width 100%
+    

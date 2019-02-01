@@ -1,0 +1,40 @@
+.loop2Step10CardMail
+    display flex
+    align-items center
+    margin 0 0 8px
+    font-size 12px
+    line-height 12px
+    color #c0b8b2
+    text-decoration none
+    transition text-decoration 0.3s
+    
+    &:hover,
+    &:active
+        text-decoration underline
+        transition text-decoration 0.3s
+    
+    &:focus
+        text-decoration underline
+        transition text-decoration 0.3s
+    
+    &:last-child
+        margin-bottom 0
+    
+    &__img
+        flex 0 -1 17px
+        margin-right 5px
+        
+        .svg-icon
+            width 17px
+            height 17px
+            vertical-align middle        
+    
+    &__title
+        flex 1
+
+.loop2Step10CardMail--download
+    padding 20px 15px 27px 20px
+    
+    .loop2Step10CardMail__title
+        font-size 13px
+        line-height 13px

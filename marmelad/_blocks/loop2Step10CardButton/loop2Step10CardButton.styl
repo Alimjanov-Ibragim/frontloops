@@ -1,0 +1,55 @@
+.loop2Step10CardButton
+    max-width 158px
+    width 100%
+    margin 0 0 10px
+    padding 11px 8px 8px
+    font-size 15px
+    font-weight 300
+    line-height 15px
+    text-decoration none
+    text-align center
+    border-radius 20px
+    
+    &:last-child
+        margin-bottom 0
+
+.loop2Step10CardButton--blue
+    color #fff
+    background #5eb5e6
+    transition background 0.3s
+    
+    &:hover,
+    &:active
+        background #9ad3f3
+        transition background 0.3s
+    
+    &:focus
+        background #4b7c98
+        transition background 0.3s
+
+.loop2Step10CardButton--white
+    position relative
+    padding 11px 27px 7px 8px
+    border 1px solid #5eb5e6
+    color #5eb5e6
+    transition background 0.3s
+    
+    &:hover,
+    &:active
+        background rgba(#9ad3f3,.3)
+        transition background 0.3s
+    
+    &:focus
+        background rgba(#4b7c98,.3)
+        transition background 0.3s
+    
+    &:before
+        content ''
+        position absolute
+        top 12px
+        right 44px
+        width 10px
+        height 10px
+        background url('../img/chevron-down.svg') 0 0 no-repeat
+        background-size cover
+    

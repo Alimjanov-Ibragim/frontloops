@@ -1,0 +1,83 @@
+.loop2Step10_menu-top
+    flex 0 0 528px
+    max-width 528px
+    
+    &__menu
+        position relative
+        display flex
+        justify-content center
+        padding 0 10px 0 10px
+            
+        li
+            margin 0 33px 0 0
+            
+            &:last-child
+                margin-right 0
+                
+            a
+                padding 17px 0 21px 0
+                display block
+                font-size 15px
+                color #000
+                line-height 15px
+                letter-spacing -0.3px
+                text-decoration none
+                outline none
+                transition transform 0.2s
+
+                &:hover,
+                &:active
+                    color #ff685b
+                    transform translate(0,-5%)
+                    transition transform 0.2s
+                    
+                &:focus
+                    color #ff685b
+                    text-decoration underline
+
+.loop2Step10_menu-top--header-bot
+    flex 1
+    max-width 100%
+    
+    .loop2Step10_menu-top__menu
+        justify-content flex-start
+        padding 0
+        
+        &:after
+            display none
+            
+        li
+            margin-right 0
+            a
+                position relative
+                padding 12px 27px
+                font-size 14px
+                font-weight 300
+                color #868686
+                line-height 14px
+                letter-spacing -0.5px
+                border-bottom 2px solid transparent
+                transition border-bottom 0.3s
+            
+                &:hover,
+                &:active
+                    color #6e4343
+                    border-color #5eb5e6
+                    transform none
+                    transition border-bottom 0.3s
+                    
+                &:focus
+                    color #6e4343
+                    border-color #2590cc
+                    text-decoration none
+
+@media ( max-width 1140px )
+    .loop2Step10_menu-top--top
+        flex 0 0 auto
+        width 40px
+        height 40px
+        background #000
+        cursor pointer
+    
+    .loop2Step10_menu-top__menu
+        display none

@@ -1,0 +1,29 @@
+.loop2Step10TagsItem
+    display flex
+    &__tag
+        margin 2px 10px 0 0
+        padding 6px 7px 8px
+        font-size 13px
+        font-weight 300
+        line-height 13px
+        color #000
+        text-decoration none
+        background #f1f1f1
+        
+        &:hover,
+        &:active
+            text-decoration underline
+
+        &:focus
+            text-decoration none
+            background #e0d5d5
+        
+        &:last-child
+            margin-right 0
+
+@media ( max-width 768px )
+    .loop2Step10TagsItem
+        flex-wrap wrap
+        
+        .loop2Step10TagsItem__tag
+            margin-bottom 10px

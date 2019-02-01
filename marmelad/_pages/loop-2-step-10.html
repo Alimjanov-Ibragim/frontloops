@@ -1,0 +1,22 @@
+= yaml =
+pageTitle: Main Page
+bodyMods: demo
+bodyClasses: ''
+scrollFixClasses: ''
+contentClasses: 'container'
+asideLeft: false
+asideRight: false
+layout: !!map
+    header : false
+    footer : false
+    left : false
+    right : false
+= yaml =
+
+{% extends '_layout.html' %}
+
+{% block main %}
+
+{% include 'loop-2-step-10.html' %}
+
+{% endblock %}

@@ -1,0 +1,59 @@
+.loop2Step10More
+    
+    &__title
+        margin 0 0 15px
+        font-size 14px
+        font-weight 300
+        line-height 21px
+        color #000
+        text-transform uppercase
+    
+    &__items
+        position relative
+        text-align center
+        
+        &:before,
+        &:after
+            content ''
+            position absolute
+            top 50%
+            margin-top -5px
+            width 15px
+            height 15px
+            cursor pointer
+        
+        &:before
+            left 0
+            background url('../img/chevron-left.svg') 0 0 no-repeat
+            background-size cover
+        
+        &:after
+            right 0
+            background url('../img/chevron-right.svg') 0 0 no-repeat
+            background-size cover
+    
+    &__itemTitle
+        margin 0 0 10px
+        font-size 16px
+        font-weight bold
+        line-height 16px
+        color #000
+    
+    &__subtitle
+        font-size 13px
+        line-height 13px
+        color #c0b8b2
+    
+    &__img
+        width 100px
+        height 100px
+        margin 0 auto 20px
+        
+        img
+            max-width 100%
+            border-radius 50%
+
+@media ( max-width 600px )
+    .loop2Step10More__items:before,
+    .loop2Step10More__items:after
+        display none

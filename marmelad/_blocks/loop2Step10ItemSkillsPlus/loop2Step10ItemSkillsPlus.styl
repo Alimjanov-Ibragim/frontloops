@@ -1,0 +1,39 @@
+.loop2Step10ItemSkillsPlus
+    display flex
+    flex 0 0 50%
+    justify-content flex-end
+    margin -3px 0 0
+    
+    &__img
+        width 40px
+        height 40px
+        margin 0 0 0 14px
+        border-radius 50%
+        border 1px solid transparent
+        
+        &:hover,
+        &:active,
+        &:focus
+            border-color #000
+        
+        img
+            max-width 100%
+            border-radius 50%
+
+.loop2Step10ItemSkillsPlus__img--num
+    position relative
+    background #f1f1f1
+    border-radius 50%
+    
+    span
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%,-50%)
+        font-size 12px
+        font-weight bold
+        color #333
+
+@media ( max-width 768px )
+    .loop2Step10ItemSkillsPlus__img:not(.loop2Step10ItemSkillsPlus__img--num)
+        display none

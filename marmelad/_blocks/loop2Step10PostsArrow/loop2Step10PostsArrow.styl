@@ -1,0 +1,35 @@
+.loop2Step10PostsArrow
+    position absolute
+    top -45px
+    right 0
+    width 90px
+    height 30px
+    
+    &__prev,
+    &__next
+        position relative
+        display inline-block
+        width 30px
+        height 30px
+        border 1px solid #1725f2
+        border-radius 50%
+        cursor pointer
+        outline none
+        
+        &:hover,
+        &:active
+            background #dae1f3
+        
+        &:focus
+            background #9daaca
+
+        img
+            position absolute
+            top 50%
+            left 50%
+            width 10px
+            height 10px
+            transform translate(-50%,-50%)
+    
+    &__prev
+        margin-right 3px

@@ -1,0 +1,43 @@
+.loop2Step10ContentItem
+    padding 20px 20px 0 55px
+    
+    &__title
+        position relative
+        margin 0 0 12px
+        font-size 21px
+        font-weight 300
+        line-height 21px
+        color #000
+    
+    &__text
+        font-size 15px
+        line-height 20px
+        color #000
+        
+    &__img
+        position absolute
+        top 0
+        left -35px
+        width 24px
+        height 24px
+        
+        .svg-icon
+            display block
+    
+    &__content
+        display flex
+        justify-content space-between
+        margin 0 0 25px
+        
+        &:last-child
+            margin-bottom 0
+
+@media ( max-width 480px )
+    .loop2Step10ContentItem
+        padding 20px
+        
+    .loop2Step10ContentItem__title
+        padding-left 55px
+    
+    .loop2Step10ContentItem__img
+        left 0

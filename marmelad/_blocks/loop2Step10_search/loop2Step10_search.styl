@@ -1,0 +1,43 @@
+.loop2Step10_search
+    position relative
+    z-index 1
+    flex 0 0 190px
+    max-width 190px
+    padding 16px 10px 21px 10px
+    text-align center
+    
+    &:before
+        content ''
+        position absolute
+        top 21px
+        right 32px
+        width 20px
+        height 20px
+        background url('../img/search.svg') 0 0 no-repeat
+        background-size cover
+    
+    input
+        max-width 150px
+        width 100%
+        margin 0 auto
+        padding 4px 20px 5px 10px
+        font-size 12px
+        color #000
+        outline none
+        background none
+        border 1px solid #dedede
+        border-radius 15px
+        
+        &::-webkit-input-placeholder {color:#757575;}
+        &::-moz-placeholder          {color:#757575;}/* Firefox 19+ */
+        &:-moz-placeholder          {color:#757575;}/* Firefox 18- */
+        &:-ms-input-placeholder      {color:#757575;}
+
+@media ( max-width 1140px )
+    .loop2Step10_search
+        flex 0 0 auto
+
+@media ( max-width 600px )
+    .loop2Step10_search,
+    .loop2Step10_search+.loop2Step10_header__line
+        display none

@@ -661,7 +661,7 @@ html {
 }
 
 .loop3Step1Size--amount .loop3Step1Size__title {
-  margin: 0 50px 0 0;
+  margin: 0 47px 0 0;
 }
 
 .loop3Step1Size--amount .loop3Step1Size__items {
@@ -686,7 +686,7 @@ html {
 }
 
 .loop3Step1Size--amount .loop3Step1Size__prev {
-  left: -21px;
+  left: -17px;
   border-width: 6px 7px 6px 0;
   border-color: transparent #e26796 transparent transparent;
 }
@@ -698,7 +698,7 @@ html {
 }
 
 .loop3Step1Size--amount .loop3Step1Size__next {
-  right: -15px;
+  right: -17px;
   border-width: 6px 0 6px 7px;
   border-color: transparent transparent transparent #e26796;
 }

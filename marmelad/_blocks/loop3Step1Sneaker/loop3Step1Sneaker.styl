@@ -28,6 +28,18 @@
         &:focus
             background #2b1382
             
+            .loop3Step1Sneaker__anim
+                content ''
+                position absolute
+                top -4px
+                left -4px
+                right -4px
+                bottom -4px
+                opacity 1
+                border-radius 50%
+                border 2px dashed #fff
+                animation anim 2.5s linear infinite
+            
         &:before
             content ''
             position absolute
@@ -75,3 +87,13 @@
     .loop3Step1Sneaker
         top 11%
         width auto
+
+@keyframes anim
+    0%
+        transform rotate(0deg) scale(1)
+    
+    50%
+        transform rotate(180deg) scale(1.4)
+        
+    100%
+        transform rotate(360deg) scale(1)

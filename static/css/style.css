@@ -561,13 +561,13 @@ html {
 .loop3Step1Nav__dot:focus:before {
   content: '';
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
   opacity: 0;
   border-radius: 50%;
-  border: 1px solid #eea5bf;
+  border: 2px solid #eea5bf;
   -webkit-animation: dotHov 1s ease-in-out infinite;
           animation: dotHov 1s ease-in-out infinite;
 }
@@ -748,6 +748,20 @@ html {
   background: #2b1382;
 }
 
+.loop3Step1Sneaker__plus:focus .loop3Step1Sneaker__anim {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  opacity: 1;
+  border-radius: 50%;
+  border: 2px dashed #fff;
+  -webkit-animation: anim 2.5s linear infinite;
+          animation: anim 2.5s linear infinite;
+}
+
 .loop3Step1Sneaker__plus:before {
   content: '';
   position: absolute;
@@ -790,6 +804,40 @@ html {
   position: absolute;
   bottom: 33%;
   right: 14%;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg) scale(1.4);
+            transform: rotate(180deg) scale(1.4);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes anim {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg) scale(1.4);
+            transform: rotate(180deg) scale(1.4);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
 }
 
 .loop3Step1Sneakers {
@@ -998,6 +1046,10 @@ html {
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: textfield;
+}
+
+.sizeRadio__num:focus {
+  box-shadow: 0px 0px 9px 3px #e26796;
 }
 
 .sizeRadio__num::-webkit-outer-spin-button,

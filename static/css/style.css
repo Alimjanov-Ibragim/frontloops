@@ -713,18 +713,9 @@ html {
 }
 
 .loop3Step1Sneaker__plus {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  z-index: 5;
   width: 30px;
   height: 30px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 20px;
-  color: #fff;
   background: #5429f2;
   border: none;
   border-radius: 50%;
@@ -743,6 +734,32 @@ html {
 
 .loop3Step1Sneaker__plus:focus {
   background: #2b1382;
+}
+
+.loop3Step1Sneaker__plus:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 2px;
+  height: 10px;
+  background: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.loop3Step1Sneaker__plus:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .loop3Step1Sneaker__plus--first {

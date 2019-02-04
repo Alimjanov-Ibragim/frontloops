@@ -1,12 +1,14 @@
 .sizeRadio
     min-width 48px
     margin 0 14px 0 0
-    cursor pointer
+    outline none
+    cursor pointer    
     
     &:last-child
         margin-right 0
 
     &__size
+        position relative
         display block
         padding 7px 9px
         font-size 26px
@@ -15,6 +17,21 @@
         text-align center
         border 2px solid transparent
         border-radius 50px
+        outline none
+    
+    &__input:focus+.sizeRadio__size
+        
+        &:before
+            content ''
+            position absolute
+            top -2px
+            left -2px
+            right -2px
+            bottom -2px
+            opacity 0
+            border-radius 50%
+            box-shadow 0px 0px 9px 3px #e26796
+            animation dotHov 1s ease-in-out infinite
 
 .loop3Step1Size__title
     margin 0 24px 0 0
@@ -29,6 +46,7 @@
 .sizeRadio__input:checked+.sizeRadio__size
     border-color #e26796
     color #e26796
+    outline none
 
 .sizeRadio--amount
     margin-right 0
@@ -36,7 +54,19 @@
     border none
 
 .sizeRadio__num
+    width 20px
+    margin 0
+    padding 0
     font-size 25px
     letter-spacing -0.5px
     color #000
-    
+    text-align center
+    border none
+    outline none
+    -webkit-appearance none
+    -moz-appearance textfield
+
+    &::-webkit-outer-spin-button, 
+    &::-webkit-inner-spin-button
+        -webkit-appearance none
+        margin 0

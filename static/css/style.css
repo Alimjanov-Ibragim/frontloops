@@ -698,7 +698,7 @@ html {
 }
 
 .loop3Step1Size--amount .loop3Step1Size__next {
-  right: -21px;
+  right: -15px;
   border-width: 6px 0 6px 7px;
   border-color: transparent transparent transparent #e26796;
 }
@@ -927,6 +927,7 @@ html {
 .sizeRadio {
   min-width: 48px;
   margin: 0 14px 0 0;
+  outline: none;
   cursor: pointer;
 }
 
@@ -935,6 +936,7 @@ html {
 }
 
 .sizeRadio__size {
+  position: relative;
   display: block;
   padding: 7px 9px;
   font-size: 26px;
@@ -943,6 +945,21 @@ html {
   text-align: center;
   border: 2px solid transparent;
   border-radius: 50px;
+  outline: none;
+}
+
+.sizeRadio__input:focus+.sizeRadio__size:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  opacity: 0;
+  border-radius: 50%;
+  box-shadow: 0px 0px 9px 3px #e26796;
+  -webkit-animation: dotHov 1s ease-in-out infinite;
+          animation: dotHov 1s ease-in-out infinite;
 }
 
 .loop3Step1Size__title {
@@ -960,6 +977,7 @@ html {
 .sizeRadio__input:checked+.sizeRadio__size {
   border-color: #e26796;
   color: #e26796;
+  outline: none;
 }
 
 .sizeRadio--amount {
@@ -969,9 +987,23 @@ html {
 }
 
 .sizeRadio__num {
+  width: 20px;
+  margin: 0;
+  padding: 0;
   font-size: 25px;
   letter-spacing: -0.5px;
   color: #000;
+  text-align: center;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.sizeRadio__num::-webkit-outer-spin-button,
+.sizeRadio__num::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 @media (max-width: 990px) {

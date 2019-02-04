@@ -1,8 +1,6 @@
 .loop3Step1View
     position relative
     z-index 2
-    display flex
-    flex-direction column
     height 100%
     
     &__logo
@@ -38,3 +36,13 @@
         left 0
         right 0
         text-align center
+
+@media ( max-width 768px )
+    .loop3Step1View__nav
+        bottom 10px
+
+@media ( max-width 425px )
+    
+    .loop3Step1View__num
+        font-size 200px
+        line-height 200px

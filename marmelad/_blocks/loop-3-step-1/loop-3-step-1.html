@@ -39,11 +39,26 @@
                             Size
                         </div>
                         <div elem="items">
-                            <div elem="item">S</div>
-                            <div elem="item">M</div>
-                            <div elem="item">L</div>
-                            <div elem="item">XL</div>
-                            <div elem="item">XXl</div>
+                            <label block="sizeRadio">
+                <input elem="input" class="visually-hidden" type="radio" name="radio" checked="checked">
+                                <span elem="size">S</span>
+                            </label>
+                            <label block="sizeRadio">
+                <input elem="input" class="visually-hidden" type="radio" name="radio">
+                                <span elem="size">M</span>
+                            </label>
+                            <label block="sizeRadio">
+                <input elem="input" class="visually-hidden" type="radio" name="radio">
+                                <span elem="size">L</span>
+                            </label>
+                            <label block="sizeRadio">
+                <input elem="input" class="visually-hidden" type="radio" name="radio">
+                                <span elem="size">XL</span>
+                            </label>
+                            <label block="sizeRadio">
+                <input elem="input" class="visually-hidden" type="radio" name="radio">
+                                <span elem="size">XXL</span>
+                            </label>
                         </div>
                     </div><!-- b:loop3Step1Size -->
                     <div block="loop3Step1Size" mods="amount">
@@ -51,7 +66,7 @@
                             Amount
                         </div>
                         <div elem="items">
-                            <div elem="item">2</div>
+                            <div block="sizeRadio" mods="amount">2</div>
                             <div elem="nav">
                                 <div elem="prev"></div>
                                 <div elem="next"></div>

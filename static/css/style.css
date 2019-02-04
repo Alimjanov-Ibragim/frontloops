@@ -481,6 +481,7 @@ html {
 .loop3Step1Button {
   max-width: 300px;
   width: 100%;
+  height: 62px;
   display: inline-block;
   vertical-align: top;
   padding: 19px 40px 20px;
@@ -492,6 +493,7 @@ html {
   text-transform: uppercase;
   text-decoration: none;
   background: #e74c3c;
+  box-shadow: 0px 6px 20px 0px #e74c3c;
   border: 1px dashed transparent;
   border-radius: 5px;
   outline: none;
@@ -500,11 +502,14 @@ html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  transition: margin-top 0.3s;
 }
 
 .loop3Step1Button:hover,
 .loop3Step1Button:active {
+  margin-top: 2px;
   background: #b74033;
+  transition: margin-top 0.3s;
 }
 
 .loop3Step1Button:focus {
@@ -521,7 +526,7 @@ html {
 }
 
 .loop3Step1Info__text {
-  margin: 0 0 41px;
+  margin: 0 0 37px;
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.2px;
@@ -533,13 +538,13 @@ html {
 }
 
 .loop3Step1Nav__dot {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 15px;
   height: 15px;
   margin: 0 8px;
   background: #eea5bf;
-  border: 1px dashed transparent;
   border-radius: 50%;
   outline: none;
 }
@@ -551,7 +556,48 @@ html {
 
 .loop3Step1Nav__dot:focus {
   background: #fff;
-  border-color: #e26796;
+}
+
+.loop3Step1Nav__dot:focus:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  opacity: 0;
+  border-radius: 50%;
+  border: 1px solid #eea5bf;
+  -webkit-animation: dotHov 1s ease-in-out infinite;
+          animation: dotHov 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes dotHov {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes dotHov {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .loop3Step1Price {
@@ -601,41 +647,12 @@ html {
       flex: 1 1;
 }
 
-.loop3Step1Size__item {
-  margin: 0 35px 0 0;
-  padding: 2px;
-  font-size: 26px;
-  line-height: 26px;
-  color: #ababab;
-  border: 2px solid transparent;
-  border-radius: 5px;
-}
-
-.loop3Step1Size__item:hover,
-.loop3Step1Size__item:active {
-  border-color: #e26796;
-  color: #e26796;
-}
-
-.loop3Step1Size__item:focus {
-  border-color: #e26796;
-  color: #e26796;
-}
-
-.loop3Step1Size__item:last-child {
-  margin-right: 0;
-}
-
 .loop3Step1Size--size {
-  margin: 0 0 23px;
-}
-
-.loop3Step1Size--size .loop3Step1Size__title {
-  margin: 0 40px 0 0;
+  margin: 0px 0 14px;
 }
 
 .loop3Step1Size--amount {
-  margin: 0 0 57px;
+  margin: 0 0 50px;
 }
 
 .loop3Step1Size--amount .loop3Step1Size__items {
@@ -649,23 +666,6 @@ html {
 
 .loop3Step1Size--amount .loop3Step1Size__items {
   position: relative;
-}
-
-.loop3Step1Size--amount .loop3Step1Size__item {
-  margin-right: 0;
-  letter-spacing: -0.5px;
-  border: none;
-}
-
-.loop3Step1Size--amount .loop3Step1Size__item:hover,
-.loop3Step1Size--amount .loop3Step1Size__item:active {
-  border-color: transparent;
-  color: #000;
-}
-
-.loop3Step1Size--amount .loop3Step1Size__item:focus {
-  border-color: transparent;
-  color: #000;
 }
 
 .loop3Step1Size--amount .loop3Step1Size__nav {
@@ -691,10 +691,22 @@ html {
   border-color: transparent #e26796 transparent transparent;
 }
 
+.loop3Step1Size--amount .loop3Step1Size__prev:hover,
+.loop3Step1Size--amount .loop3Step1Size__prev:active,
+.loop3Step1Size--amount .loop3Step1Size__prev:focus {
+  border-color: transparent #a7486c transparent transparent;
+}
+
 .loop3Step1Size--amount .loop3Step1Size__next {
   right: -21px;
   border-width: 6px 0 6px 7px;
   border-color: transparent transparent transparent #e26796;
+}
+
+.loop3Step1Size--amount .loop3Step1Size__next:hover,
+.loop3Step1Size--amount .loop3Step1Size__next:active,
+.loop3Step1Size--amount .loop3Step1Size__next:focus {
+  border-color: transparent transparent transparent #a7486c;
 }
 
 .loop3Step1Sneaker {
@@ -764,20 +776,20 @@ html {
 
 .loop3Step1Sneaker__plus--first {
   position: absolute;
-  top: 68px;
-  left: 125px;
+  top: 15%;
+  left: 26%;
 }
 
 .loop3Step1Sneaker__plus--second {
   position: absolute;
-  top: 226px;
-  left: 211px;
+  top: 50%;
+  left: 44%;
 }
 
 .loop3Step1Sneaker__plus--third {
   position: absolute;
-  bottom: 148px;
-  right: 70px;
+  bottom: 33%;
+  right: 14%;
 }
 
 .loop3Step1Sneakers {
@@ -797,7 +809,8 @@ html {
   -ms-flex: 0 0 53%;
       flex: 0 0 53%;
   max-width: 53%;
-  padding: 60px 40px;
+  min-height: 567px;
+  padding: 60px 40px 40px;
 }
 
 .loop3Step1Sneakers__view {
@@ -809,10 +822,6 @@ html {
 .loop3Step1View {
   position: relative;
   z-index: 2;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
   height: 100%;
 }
 
@@ -913,4 +922,119 @@ html {
 .page-scroller--visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+.sizeRadio {
+  min-width: 48px;
+  margin: 0 14px 0 0;
+  cursor: pointer;
+}
+
+.sizeRadio:last-child {
+  margin-right: 0;
+}
+
+.sizeRadio__size {
+  display: block;
+  padding: 7px 9px;
+  font-size: 26px;
+  line-height: 26px;
+  color: #ababab;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 50px;
+}
+
+.loop3Step1Size__title {
+  margin: 0 24px 0 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.sizeRadio__input:checked+.sizeRadio__size {
+  border-color: #e26796;
+  color: #e26796;
+}
+
+.sizeRadio--amount {
+  margin-right: 0;
+  min-width: auto;
+  font-size: 25px;
+  letter-spacing: -0.5px;
+  color: #000;
+  border: none;
+}
+
+@media (max-width: 990px) {
+  .loop3Step1Size--size,
+  .loop3Step1Size--amount {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: start;
+        align-items: flex-start;
+  }
+
+  .loop3Step1Size__title {
+    -ms-flex: 1 1;
+        flex: 1 1;
+    margin: 0 0 15px;
+  }
+
+  .loop3Step1Size--amount .loop3Step1Size__title {
+    margin-bottom: 15px;
+  }
+
+  .loop3Step1Size--amount .loop3Step1Size__items {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .loop3Step1Sneakers {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+
+  .loop3Step1Sneakers__view,
+  .loop3Step1Sneakers__info {
+    -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .loop3Step1View {
+    min-height: 567px;
+  }
+
+  .loop3Step1View__nav {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .loop3Step1Sneaker {
+    left: 0;
+    width: auto;
+  }
+
+  .loop3Step1View,
+  .loop3Step1Info {
+    min-height: 457px;
+  }
+
+  .loop3Step1Sneakers__info {
+    padding: 20px;
+  }
+
+  .loop3Step1View__num {
+    font-size: 200px;
+    line-height: 200px;
+  }
 }

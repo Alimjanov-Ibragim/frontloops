@@ -1,0 +1,54 @@
+.loop3Step2Item
+    position relative
+    display flex
+    justify-content center
+    margin 0 0 30px
+    outline none
+    transition opacity 0.3s, fill 0.3s
+
+    &:before
+        content ''
+        position absolute
+        top 0
+        bottom 0
+        right -30px
+        width 2px
+        opacity 0
+        background #648cf7
+
+    &:hover,
+    &:active
+        .svg-icon
+            fill #648cf7
+            transition fill 0.3s
+
+        &:before
+            opacity 1
+            transition opacity 0.3s
+    
+    &:focus
+        box-shadow 0 0 12px 2px #648cf7
+        .svg-icon
+            fill #648cf7
+
+        &:before
+            opacity 1
+    
+    .svg-icon
+        width 30px
+        height 30px
+        fill #dadada
+
+.loop3Step2Item--logo
+    transform rotate(-180deg)
+    margin-bottom 60px
+    
+    &:hover,
+    &:active,
+    &:focus
+        &:before
+            opacity 0
+
+.loop3Step2Item.active
+    .svg-icon
+        fill #648cf7

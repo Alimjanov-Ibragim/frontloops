@@ -1,0 +1,21 @@
+.loop3Step2Setting
+    padding 0 30px 0 0
+    border-right 1px solid #dedede
+
+@media ( max-width 480px )
+    .loop3Step2Setting
+        display flex
+        flex 1
+        justify-content space-between
+        align-items center
+        border-right none
+        
+    .loop3Step2Item,
+    .loop3Step2Item--logo
+        margin-bottom 0
+        
+        &:hover,
+        &:active,
+        &:focus
+            &:before
+                display none

@@ -51,7 +51,7 @@ input:focus:-ms-input-placeholder {
 
 html {
   font-size: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   color: rgba(0,0,0,0.87);
   background-color: #fff;
@@ -90,7 +90,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   color: rgba(0,0,0,0.87);
   text-transform: none;
@@ -467,6 +467,140 @@ html {
       flex: 0 0 300px;
 }
 
+.loop-3-step-3 {
+  height: 100vh;
+  background: #2980b9;
+}
+
+.loop3Step3Button {
+  display: block;
+  padding: 18px 20px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0 0 5px 5px;
+  background: #2f2f2f;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+}
+
+.loop3Step3Button:hover,
+.loop3Step3Button:active {
+  background: #4c4c4c;
+}
+
+.loop3Step3Button:focus {
+  font-weight: bold;
+}
+
+.loop3Step3Grid {
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 99px 0;
+}
+
+.loop3Step3Grid__item {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 32px 40px;
+  text-align: center;
+}
+
+.loop3Step3MovieCard {
+  position: relative;
+  max-width: 226px;
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+}
+
+.loop3Step3MovieCard:hover .loop3Step3MovieCard__content,
+.loop3Step3MovieCard:active .loop3Step3MovieCard__content,
+.loop3Step3MovieCard:focus .loop3Step3MovieCard__content {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.loop3Step3MovieCard__img {
+  position: relative;
+  z-index: 10;
+}
+
+.loop3Step3MovieCard__img img {
+  max-width: 100%;
+  min-height: 348px;
+}
+
+.loop3Step3MovieCard__content {
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  right: -20px;
+  z-index: 5;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  min-height: 100%;
+  padding-top: 155%;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-transform: scale(0.4, 0.1);
+          transform: scale(0.4, 0.1);
+}
+
+.loop3Step3Price {
+  margin: 0 0 21px;
+  padding: 0 20px;
+}
+
+.loop3Step3Price__cur {
+  margin: 0 0 3px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #2bcd71;
+}
+
+.loop3Step3Price__old {
+  font-size: 16px;
+  line-height: 16px;
+  color: #b1b3b7;
+}
+
+.loop3Step3Title {
+  margin: 0 0 20px;
+  padding: 0 20px;
+}
+
+.loop3Step3Title__title {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #000;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.loop3Step3Title__subtitle {
+  font-size: 13px;
+  color: #b7adaa;
+}
+
 .page-scroller {
   opacity: 0;
   position: fixed;
@@ -522,4 +656,26 @@ html {
 .page-scroller--visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+@media (max-width: 590px) {
+  .loop3Step3Grid {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+
+  .loop3Step3Grid__item {
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .loop3Step3MovieCard__content {
+    position: relative;
+    padding-top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
 }

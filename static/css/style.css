@@ -472,6 +472,11 @@ html {
   background: #2980b9;
 }
 
+body {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 .loop3Step3Button {
   display: block;
   padding: 18px 20px;

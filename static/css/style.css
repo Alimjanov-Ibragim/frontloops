@@ -555,6 +555,10 @@ html {
   margin: 0;
 }
 
+.loop3Step2ContentItems .loop3Step2Item:first-child {
+  margin-right: 25px;
+}
+
 .loop3Step2ContentItems .loop3Step2Item:hover .svg-icon,
 .loop3Step2ContentItems .loop3Step2Item:active .svg-icon {
   fill: #fff;

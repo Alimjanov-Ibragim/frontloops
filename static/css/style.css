@@ -534,9 +534,9 @@ body {
           transform: scale(1, 1);
   -webkit-transform-origin: center top;
           transform-origin: center top;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  transition: -webkit-transform 0.16s cubic-bezier(0, 0.95, 0.04, 1.08);
+  transition: transform 0.16s cubic-bezier(0, 0.95, 0.04, 1.08);
+  transition: transform 0.16s cubic-bezier(0, 0.95, 0.04, 1.08), -webkit-transform 0.16s cubic-bezier(0, 0.95, 0.04, 1.08);
 }
 
 .loop3Step3MovieCard__img {

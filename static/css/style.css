@@ -469,7 +469,7 @@ html {
 
 .loop-3-step-4 {
   padding: 65px 0 300px;
-  background: url("../img/background.jpg") 0 0 no-repeat;
+  background: url("../img/background.jpg") 50% 0 no-repeat;
 }
 
 .loop3Step4Item {
@@ -525,6 +525,10 @@ html {
   border-radius: 5px 0 0 5px;
 }
 
+.loop3Step4Preview__left .loop3Step4Preview__items {
+  opacity: 1;
+}
+
 .loop3Step4Preview__right {
   position: relative;
   width: 50%;
@@ -559,6 +563,7 @@ html {
   -ms-flex-direction: column;
       flex-direction: column;
   padding: 12px 14px 10px;
+  transition: opacity 0.3s;
 }
 
 .page-scroller {

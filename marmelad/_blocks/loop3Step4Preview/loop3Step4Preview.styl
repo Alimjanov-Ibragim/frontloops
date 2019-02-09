@@ -1,0 +1,64 @@
+.loop3Step4Preview
+    position relative
+    display flex
+    max-width 400px
+    margin 0 auto
+    min-height 401px
+    border-radius 5px
+
+    &:hover 
+        .loop3Step4Preview__wr
+            // border-left 2px solid rgba(#ebebeb,0.5)
+            transform rotateY( -45deg)
+            box-shadow 7px 10px 17px 0px rgba(0,0,0,0.3)
+        .loop3Step4Preview__right
+            border-left 1px solid rgba(#eae3dd,0.2)
+        
+        .loop3Step4Preview__items
+            opacity 1
+    
+    &__left
+        min-height 400px
+        width 50%
+        background url('../img/kanye.jpg') 0 0 no-repeat
+        border-radius 5px 0 0 5px
+
+    &__right
+        position relative
+        width 50%
+        background #fff
+        border-radius 0 5px 5px 0
+        perspective 1340px
+    
+    &__wr
+        position absolute
+        top 0
+        bottom 0
+        width 100%
+        border-radius 0 5px 5px 0
+        background url('../img/kanye.jpg') 70% 0 no-repeat
+        transition all 0.3s ease-in-out 0s
+        transform-origin left center
+    
+    &__items
+        position absolute
+        top 0
+        right 0
+        bottom 0
+        opacity 0
+        display flex
+        flex-direction column
+        padding 12px 14px 10px
+        
+@media ( max-width 320px )
+    .loop-3-step-4
+        padding 65px 10px 300px
+    
+    .loop3Step4Preview__left
+        background-position 15% 0
+    
+    .loop3Step4Preview__wr
+        background-position 57% 0
+    
+    .loop3Step4Preview__items
+        padding 12px 8px 10px

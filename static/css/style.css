@@ -51,7 +51,7 @@ input:focus:-ms-input-placeholder {
 
 html {
   font-size: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   color: rgba(0,0,0,0.87);
   background-color: #fff;
@@ -90,7 +90,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   color: rgba(0,0,0,0.87);
   text-transform: none;
@@ -467,6 +467,84 @@ html {
       flex: 0 0 300px;
 }
 
+.loop-3-step-4 {
+  padding: 65px 0 300px;
+  background: url("../img/background.jpg") 0 0 no-repeat;
+}
+
+.loop3Step4Item {
+  margin-bottom: 29px;
+}
+
+.loop3Step4Item img {
+  width: 100%;
+}
+
+.loop3Step4Preview {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 401px;
+  border-radius: 5px;
+}
+
+.loop3Step4Preview:hover .loop3Step4Preview__wr {
+  -webkit-transform: rotateY(-45deg);
+          transform: rotateY(-45deg);
+  box-shadow: 7px 10px 17px 0px rgba(0,0,0,0.3);
+}
+
+.loop3Step4Preview:hover .loop3Step4Preview__right {
+  border-left: 1px solid rgba(234,227,221,0.2);
+}
+
+.loop3Step4Preview:hover .loop3Step4Preview__items {
+  opacity: 1;
+}
+
+.loop3Step4Preview__left {
+  min-height: 400px;
+  width: 50%;
+  background: url("../img/kanye.jpg") 0 0 no-repeat;
+  border-radius: 5px 0 0 5px;
+}
+
+.loop3Step4Preview__right {
+  position: relative;
+  width: 50%;
+  background: #fff;
+  border-radius: 0 5px 5px 0;
+  -webkit-perspective: 1340px;
+          perspective: 1340px;
+}
+
+.loop3Step4Preview__wr {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+  background: url("../img/kanye.jpg") 70% 0 no-repeat;
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+.loop3Step4Preview__items {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 12px 14px 10px;
+}
+
 .page-scroller {
   opacity: 0;
   position: fixed;
@@ -522,4 +600,22 @@ html {
 .page-scroller--visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+@media (max-width: 320px) {
+  .loop-3-step-4 {
+    padding: 65px 10px 300px;
+  }
+
+  .loop3Step4Preview__left {
+    background-position: 15% 0;
+  }
+
+  .loop3Step4Preview__wr {
+    background-position: 57% 0;
+  }
+
+  .loop3Step4Preview__items {
+    padding: 12px 8px 10px;
+  }
 }

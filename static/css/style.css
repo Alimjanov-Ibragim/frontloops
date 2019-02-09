@@ -499,6 +499,7 @@ html {
 }
 
 .loop3Step4Preview:hover .loop3Step4Preview__wr {
+  z-index: 55;
   -webkit-transform: rotateY(-45deg);
           transform: rotateY(-45deg);
   box-shadow: 7px 10px 17px 0px rgba(0,0,0,0.3);

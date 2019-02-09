@@ -497,8 +497,14 @@ html {
   box-shadow: 7px 10px 17px 0px rgba(0,0,0,0.3);
 }
 
-.loop3Step4Preview:hover .loop3Step4Preview__right {
-  border-left: 1px solid rgba(234,227,221,0.2);
+.loop3Step4Preview:hover .loop3Step4Preview__right:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 56;
+  border-left: 2px solid rgba(255,255,255,0.2);
 }
 
 .loop3Step4Preview:hover .loop3Step4Preview__items {
@@ -527,7 +533,7 @@ html {
   bottom: 0;
   width: 100%;
   border-radius: 0 5px 5px 0;
-  background: url("../img/kanye.jpg") 85% 50% no-repeat;
+  background: url("../img/kanye.jpg") 85.8% 50% no-repeat;
   transition: all 0.3s ease-in-out 0s;
   -webkit-transform-origin: left center;
           transform-origin: left center;

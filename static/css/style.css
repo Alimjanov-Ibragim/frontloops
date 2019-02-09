@@ -503,6 +503,9 @@ html {
   -webkit-transform: rotateY(-45deg);
           transform: rotateY(-45deg);
   box-shadow: 7px 10px 17px 0px rgba(0,0,0,0.3);
+  transition: box-shadow 0.4s ease-in-out 0s, -webkit-transform-origin 0.3s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s;
+  transition: transform-origin 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s, box-shadow 0.4s ease-in-out 0s;
+  transition: transform-origin 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s, box-shadow 0.4s ease-in-out 0s, -webkit-transform-origin 0.3s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s;
 }
 
 .loop3Step4Preview:hover .loop3Step4Preview__right:before {
@@ -546,9 +549,9 @@ html {
   width: 100%;
   border-radius: 0 5px 5px 0;
   background: url("../img/kanye.jpg") 85.8% 50% no-repeat;
-  transition: -webkit-transform-origin 0.3s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s;
-  transition: transform-origin 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s;
-  transition: transform-origin 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s, -webkit-transform-origin 0.3s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s;
+  transition: box-shadow 0.3s ease-in-out 0s, -webkit-transform-origin 0.3s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s;
+  transition: transform-origin 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s, box-shadow 0.3s ease-in-out 0s;
+  transition: transform-origin 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s, box-shadow 0.3s ease-in-out 0s, -webkit-transform-origin 0.3s ease-in-out 0s, -webkit-transform 0.3s ease-in-out 0s;
   -webkit-transform-origin: left center;
           transform-origin: left center;
 }

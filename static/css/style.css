@@ -488,6 +488,7 @@ html {
   margin: 0 auto;
   min-height: 401px;
   border-radius: 5px;
+  box-shadow: 0px 9px 10px -1px rgba(0,0,0,0.5);
 }
 
 .loop3Step4Preview:hover .loop3Step4Preview__wr {

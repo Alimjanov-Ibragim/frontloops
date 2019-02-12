@@ -1,0 +1,40 @@
+<div block="loop-3-step-5">
+    <div elem="section">
+        <div block="loop3Step5Statistic">
+            <div elem="top">
+                {% for item in loop3Step5Month %}
+                    <a href="#" block="loop3Step5Month" {% if loop.index == "6" %}class="active"{% endif %}>
+                        <span elem="graph"  style="height: {{item.data}}%"></span>
+                        <span elem="title">{{ item.title }}</span>
+                    </a><!-- b:month -->
+                {% endfor %}
+            </div>
+            <div elem="bot">
+                <div block="loop3Step5Graph">
+                   <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                      <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#9b58b6" stroke-width="4px"></circle>
+                      <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#2bcd71" stroke-width="4px" stroke-dasharray="40 60" stroke-dashoffset="25"></circle>
+                      <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#3398dc" stroke-width="4px" stroke-dasharray="20 80" stroke-dashoffset="85"></circle>
+                      <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#f39c13" stroke-width="4px" stroke-dasharray="30 70" stroke-dashoffset="65"></circle>
+                      <!-- unused 10% -->
+                      <g class="chart-text">
+                        <text x="50%" y="50%" class="chart-number">
+                          Total spent:
+                        </text>
+                        <text x="50%" y="50%" class="chart-label">
+                          $2076
+                        </text>
+                      </g>
+                    </svg>
+                </div><!-- b:loop3Step5Graph -->
+                <div block="loop3Step5Info">
+                    <div elem="expensive">
+                        Most expensive category <span class="active">Restaurants & Dining</span>
+                    </div>
+                    <div elem="updateCat">Updated categories &nbsp;&nbsp;<span class="active">2</span></div>
+                    <div elem="updateCat">Bonus payments &nbsp;&nbsp;<span class="active">$92</span></div>
+                </div><!-- b:loop3Step5Info -->
+            </div>
+        </div><!-- b:loop3Step5Statistic -->
+    </div>
+</div><!-- b:loop-3-step-5 -->

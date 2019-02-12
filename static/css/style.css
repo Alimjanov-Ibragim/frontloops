@@ -51,7 +51,7 @@ input:focus:-ms-input-placeholder {
 
 html {
   font-size: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   color: rgba(0,0,0,0.87);
   background-color: #fff;
@@ -90,7 +90,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Ubuntu,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   color: rgba(0,0,0,0.87);
   text-transform: none;
@@ -467,6 +467,157 @@ html {
       flex: 0 0 300px;
 }
 
+.loop-3-step-5 {
+  padding: 143px 20px;
+  font-size: 0;
+}
+
+.loop3Step5Graph {
+  margin: 0 60px 0 0;
+}
+
+.donut {
+  width: 130px;
+  height: 130px;
+  fill: transparent;
+}
+
+.chart-text {
+  font-size: 13px;
+  fill: #fff;
+  -webkit-transform: translateY(0.25em);
+          transform: translateY(0.25em);
+}
+
+.chart-number {
+  font-size: 4px;
+  line-height: 1;
+  text-anchor: middle;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.chart-label {
+  font-size: 4px;
+  text-transform: uppercase;
+  text-anchor: middle;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.loop3Step5Info {
+  padding: 10px 0 0;
+  font-size: 15px;
+  line-height: 19px;
+  color: #c7c9db;
+}
+
+.loop3Step5Info > div {
+  margin-bottom: 16px;
+}
+
+.loop3Step5Info span.active {
+  color: #fff;
+}
+
+.loop3Step5Month {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex: 0 0 20px;
+      flex: 0 0 20px;
+  max-width: 20px;
+  margin-bottom: 9px;
+  text-decoration: none;
+  outline: none;
+}
+
+.loop3Step5Month:hover .loop3Step5Month__graph,
+.loop3Step5Month:active .loop3Step5Month__graph {
+  background: #3398dc;
+}
+
+.loop3Step5Month:hover .loop3Step5Month__title,
+.loop3Step5Month:active .loop3Step5Month__title {
+  color: #fff;
+}
+
+.loop3Step5Month__graph {
+  width: 20px;
+  height: 100px;
+  margin: 0 0 9px;
+  border-radius: 4px;
+  background: #aaafc8;
+}
+
+.loop3Step5Month__title {
+  font-size: 15px;
+  line-height: 15px;
+  color: #aaafc8;
+}
+
+.loop3Step5Month.active .loop3Step5Month__graph {
+  background: #3398dc;
+}
+
+.loop3Step5Month.active .loop3Step5Month__title {
+  color: #fff;
+}
+
+.loop3Step5Statistic {
+  max-width: 440px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 4px;
+  background: #424d84;
+  box-shadow: 0 4px 11px -2px rgba(66,77,132,0.6);
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.loop3Step5Statistic__top {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 20px -8px 24px;
+  height: 167px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* background of the scrollbar except button or resizer */
+  /* scrollbar itself */
+  /* set button(top and bottom of the scrollbar) */
+  -webkit-overflow-scrolling: touch;
+}
+
+.loop3Step5Statistic__top::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+}
+
+.loop3Step5Statistic__top::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.loop3Step5Statistic__top::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+
+.loop3Step5Statistic__top::-webkit-scrollbar-button {
+  display: none;
+}
+
+.loop3Step5Statistic__bot {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 11px 7px;
+}
+
 .page-scroller {
   opacity: 0;
   position: fixed;
@@ -522,4 +673,11 @@ html {
 .page-scroller--visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+@media (max-width: 375px) {
+  .loop3Step5Statistic__bot {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
 }

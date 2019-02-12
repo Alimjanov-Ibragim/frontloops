@@ -1,0 +1,36 @@
+.loop3Step5Month
+    display flex
+    justify-content flex-end
+    flex-direction column
+    flex 0 0 20px
+    max-width 20px
+    margin-bottom 9px
+    text-decoration none
+    outline none
+    
+    &:hover,
+    &:active
+        .loop3Step5Month__graph
+            background #3398dc
+        
+        .loop3Step5Month__title
+            color #fff
+    
+    &__graph
+        width 20px
+        height 100px
+        margin 0 0 9px
+        border-radius 4px
+        background #aaafc8
+    
+    &__title
+        font-size 15px
+        line-height 15px
+        color #aaafc8
+
+.loop3Step5Month.active
+    .loop3Step5Month__graph
+        background #3398dc
+    
+    .loop3Step5Month__title
+        color #fff

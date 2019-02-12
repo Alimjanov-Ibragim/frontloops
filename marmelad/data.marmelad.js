@@ -18,5 +18,47 @@ module.exports = {
       'danger',
     ],
   },
+  loop3Step5Month : [
+    {
+      title : 'Jun',
+      data : 80
+    },
+    {
+      title : 'Jul',
+      data : 100
+    },
+    {
+      title : 'Aug',
+      data : 60
+    },
+    {
+      title : 'Sep',
+      data : 45
+    },
+    {
+      title : 'Oct',
+      data : 65
+    },
+    {
+      title : 'Nov',
+      data : 73
+    },
+    {
+      title : 'Dec',
+      data : 60
+    },
+    {
+      title : 'Jan',
+      data : 40
+    },
+    {
+      title : 'Feb',
+      data : 100
+    },
+    {
+      title : 'Mar',
+      data : 95
+    }
+  ],
   pageTitle: 'marmelad',
 };

@@ -18,5 +18,19 @@ module.exports = {
       'danger',
     ],
   },
+  crumbs : [
+    {
+      'title': 'Cart'
+    },
+    {
+      'title': 'Customer Information'
+    },
+    {
+      'title': 'Shiping Method'
+    },
+    {
+      'title': 'Payment Method'
+    }
+  ],
   pageTitle: 'marmelad',
 };

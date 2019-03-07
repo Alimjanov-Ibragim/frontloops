@@ -1,0 +1,114 @@
+<div block="loop-3-step-6">
+    <div elem="section">
+        <div block="loop3Step6Crumbs">
+            <div elem="items">
+                {% for item in crumbs %}
+                    {% if loop.last != true %}
+                        <a href="{{ item.url }}" elem="item" mods="home">{{ item.title }}</a><span>-</span>
+                    {% endif %}
+                {% endfor %}
+                {{ crumbs[crumbs | length - 1].title }}
+            </div><!-- e:items -->
+        </div><!-- b:loop3Step6Crumbs -->
+        <div block="loop3Step6PaymentMethod">
+            <form action="" elem="left">
+                <div block="loop3Step6Info">
+                    <div block="loop3Step6Title" mods="info">
+                        Payment information
+                    </div><!-- b:loop3Step6Title -->
+                    <div elem="items">
+                        <div elem="top">
+                            <label block="loop3Step6Label">
+                                <div elem="title">Card number</div>
+                                <input elem="input" type="text" placeholder="**** **** **** ****">
+                            </label><!-- b:loop3Step6Label -->
+                        </div>
+                        <div elem="bot">
+                            <label block="loop3Step6Label" mods="w-60">
+                                <div elem="title">Card holder</div>
+                                <input elem="input" type="text" placeholder="Michael Jordan">
+                            </label><!-- b:loop3Step6Label -->
+                            <label block="loop3Step6Label" mods="w-20">
+                                <div elem="title">Exp.date</div>
+                                <input elem="input" type="text" placeholder="03/19">
+                            </label><!-- b:loop3Step6Label -->
+                            <label block="loop3Step6Label" mods="w-20">
+                                <div elem="title">CVC</div>
+                                <input elem="input" type="text" placeholder="***">
+                            </label><!-- b:loop3Step6Label -->
+                        </div>
+                    </div>
+                </div><!-- b:loop3Step6Info -->
+                <div block="loop3Step6Billing">
+                    <div block="loop3Step6Title" mods="billing">
+                        Billing address
+                    </div><!-- b:loop3Step6Title -->
+                    <div elem="items">
+                        <label block="loop3Step6Label" mods="billing">
+                            <input elem="input" type="checkbox" placeholder="***">
+                            <span elem="span"></span>
+                            <div elem="title">Same as the shipping address</div>
+                        </label><!-- b:loop3Step6Label -->
+                        <label block="loop3Step6Label" mods="billing">
+                            <input elem="input" type="checkbox" placeholder="***">
+                            <span elem="span"></span>
+                            <div elem="title">Use a different billing address</div>
+                        </label><!-- b:loop3Step6Label -->
+                    </div>
+                </div><!-- b:loop3Step6Billing -->
+                <div block="loop3Step6Buttons">
+                    <a href="#" block="loop3Step6But">
+                        Return to shipping method
+                    </a><!-- b:loop3Step6But -->
+                    <a href="#" block="loop3Step6But" mods="complete">
+                        Complete order
+                    </a><!-- b:loop3Step6But -->
+                </div><!-- b:loop3Step6Buttons -->
+            </form>
+            <div elem="right">
+                <div block="loop3Step6Summary">
+                    <div elem="section">
+                        <div elem="top">
+                            <div block="loop3step6Top">
+                                <div elem="left">
+                                    <div block="loop3Step6Img">
+                                        <img elem="img" src="img/order.jpg" alt="">
+                                        <span elem="count">2</span>
+                                    </div><!-- b:loop3Step6Img -->
+                                    <div elem="title">
+                                        Chocolate bar
+                                    </div>
+                                </div>
+                                <div elem="right">
+                                    <div block="loop3Step6Sum">
+                                        $2.49
+                                    </div><!-- b:loop3Step6Sum -->
+                                </div> 
+                            </div><!-- b:loop3step6Top -->
+                        </div>
+                        <div elem="middle">
+                            <div block="loop3Step6Middle">
+                                <div elem="item">
+                                    <div elem="title">Subtotal</div>
+                                    <div block="loop3Step6Sum" mods="middle">$4.98</div>
+                                </div>
+                                <div elem="item">
+                                    <div elem="title">Shipping</div>
+                                    <div block="loop3Step6Sum" mods="middle">$3.00</div>
+                                </div>
+                            </div><!-- b:loop3Step6Middle -->
+                        </div>
+                        <div elem="bottom">
+                            <div block="loop3Step6Bot">
+                                <div elem="item">
+                                    <div elem="title">Total</div>
+                                    <div block="loop3Step6Sum" mods="bold">$7.98</div>
+                                </div>
+                            </div><!-- b:loop3Step6Middle -->
+                        </div>
+                    </div>
+                </div><!-- b:loop3Step6Summary -->
+            </div>
+        </div><!-- b:loop3Step6PaymentMethod -->
+    </div>
+</div><!-- b:loop-3-step-6 -->

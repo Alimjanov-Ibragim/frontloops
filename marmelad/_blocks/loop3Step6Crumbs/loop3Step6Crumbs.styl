@@ -1,0 +1,38 @@
+.loop3Step6Crumbs
+    flex none 
+    margin 0 0 30px 0
+    padding 14px 0 0
+    font-size 12px
+    font-weight 500
+    color #000
+    
+    &__items
+        display flex
+        align-items center
+        flex-wrap wrap
+        
+        @media screen and (max-width 640px)
+            display block
+        a 
+            margin 0 5px 0 0
+            padding 0 1px 0 0
+            font-size 12px
+            font-weight 500
+            color #adadad
+            text-decoration none
+            outline none
+            transition color .3s
+            
+            &:hover,
+            &:active
+                color #5f86ed
+            
+            &:focus
+                color #5f86ed
+                text-decoration underline
+
+        span 
+            margin -3px 4px 0 0
+            font-size 13px
+            color #adadad
+            line-height 0

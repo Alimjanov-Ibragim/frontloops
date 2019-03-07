@@ -1,0 +1,109 @@
+.loop3Step6Label
+    flex 0 0 100%
+    max-width 100%
+    margin-bottom 0
+    cursor pointer
+    user-select none
+
+    &__title
+        margin-bottom 9px
+        font-size 13px
+        font-weight bold
+        line-height 12px
+        color #aaaaaa
+        text-transform uppercase
+        
+    &__input
+        max-width 100%
+        width 100%
+        padding 7px 10px
+        font-size 14px
+        color #000
+        border 2px solid #dedede
+        border-radius 3px
+        outline none
+        
+        &:focus
+            border-color #b5b3b3
+        
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #817a7c
+          opacity: 1; /* Firefox */
+        }
+
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: #817a7c
+        }
+
+        &::-ms-input-placeholder { /* Microsoft Edge */
+          color: #817a7c
+        }
+
+.loop3Step6Label--w-60
+    flex 0 0 58%
+    max-width 58%
+    margin-right 20px
+
+.loop3Step6Label--w-20
+    flex 0 0 18%
+    max-width 18%
+    margin-right 20px
+
+.loop3Step6Label--w-20:last-child
+    margin-right 0
+
+.loop3Step6Label--billing
+    display flex
+    align-items center
+    margin-bottom 20px
+    padding 0 20px 21px
+    border-bottom 1px solid #f0f0f0
+    
+    .loop3Step6Label__input
+        opacity 0
+        width 0
+        height 0
+        padding 0
+        border none
+        
+    .loop3Step6Label__title
+        margin-bottom 0
+        font-size 14px
+        line-height 14px
+        color #000
+        text-transform initial
+    
+    .loop3Step6Label__span
+        position relative
+        display block
+        width 23px
+        height 23px
+        margin-right 10px
+        border-radius 50%
+        border 2px solid #e4e4e4
+
+    .loop3Step6Label__input:checked ~ .loop3Step6Label__span,
+    .loop3Step6Label__input:focus ~ .loop3Step6Label__span
+        background #fff
+        border-color #e4e4e4
+
+        &:before
+            content ''
+            position absolute
+            top 50%
+            left 50%
+            width 10px
+            height 10px
+            background #6666ce
+            border-radius 50%
+            transform translate(-50%, -50%)
+            
+    // .loop3Step6Label__input:focus ~ .loop3Step6Label__title
+    //     color #5f86ed
+    //     text-decoration underline
+        
+
+.loop3Step6Label--billing:last-child
+    margin-bottom 0
+    padding-bottom 0
+    border-bottom none

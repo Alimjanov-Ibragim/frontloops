@@ -1,0 +1,78 @@
+.loop-3-step-6
+    background #fafafa
+    
+    &__section
+        max-width: 1200px
+        margin 0 auto
+        padding 0 20px
+
+.loop3Step6Info,
+.loop3Step6Billing,
+.loop3Step6Summary
+    background #fff
+    border-radius 5px
+    box-shadow 0px 0px 13px 0px rgba(0,0,0,0.1)
+
+@media ( max-width 767px )
+    
+    .loop3Step6PaymentMethod
+        flex-direction column
+        
+    .loop3Step6PaymentMethod__right
+        order -1
+    
+    .loop3Step6Info,
+    .loop3Step6Billing,
+    .loop3Step6Summary,
+    .loop3Step6PaymentMethod__left,
+    .loop3Step6PaymentMethod__right
+        flex 0 0 100%
+        max-width 100%
+        margin-bottom 30px
+    
+    .loop3Step6PaymentMethod__left,
+    .loop3Step6Summary
+        margin 0
+
+@media ( max-width 500px )
+    .loop3Step6Label.loop3Step6Label--w-60
+        flex 0 0 100%
+        max-width 100%
+        margin-right 0
+        
+    .loop3Step6Info__items
+        flex-direction column
+
+    .loop3Step6Label.loop3Step6Label--w-20
+        flex 0 0 45%
+        max-width 45%
+        margin-right 10%
+
+    .loop3Step6Label.loop3Step6Label--w-20:last-child
+        margin-right 0
+    
+    .loop3Step6Info__top
+        margin-bottom 0
+    
+    .loop3Step6Label
+        margin-bottom 22px
+    
+    .loop3Step6Info__bot
+        flex-wrap wrap
+    
+@media ( max-width 375px )
+    .loop3Step6Buttons
+        flex-direction column
+    
+    .loop3Step6But
+        margin-bottom 20px
+        text-align center
+    
+    .loop3Step6Summary__section
+        padding 20px 20px 8px
+    
+    .loop3Step6Info
+        padding 20px
+    
+    .loop3Step6Title--billing
+        padding 0 20px

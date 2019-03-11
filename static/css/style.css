@@ -539,12 +539,15 @@ html {
 
 .loop3Step6But--complete:hover,
 .loop3Step6But--complete:active {
-  background: #88a3e8;
   color: #fff;
+  background: #88a3e8;
+  text-decoration: none;
 }
 
 .loop3Step6But--complete:focus {
+  color: #fff;
   background: #1c43a5;
+  text-decoration: none;
 }
 
 .loop3Step6Buttons {
@@ -645,8 +648,7 @@ html {
       flex-wrap: wrap;
 }
 
-.loop3Step6Info__top,
-.loop3Step6Info__bot {
+.loop3Step6Info__top {
   display: -ms-flexbox;
   display: flex;
   -ms-flex: 0 0 100%;
@@ -656,6 +658,14 @@ html {
 
 .loop3Step6Info__top {
   margin-bottom: 22px;
+}
+
+.loop3Step6Info__bot {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -20px;
 }
 
 .loop3Step6Label {
@@ -740,21 +750,17 @@ html {
 }
 
 .loop3Step6Label--w-60 {
-  -ms-flex: 0 0 58%;
-      flex: 0 0 58%;
-  max-width: 58%;
-  margin-right: 20px;
+  -ms-flex: 0 0 60%;
+      flex: 0 0 60%;
+  max-width: 60%;
+  padding-left: 20px;
 }
 
 .loop3Step6Label--w-20 {
-  -ms-flex: 0 0 18%;
-      flex: 0 0 18%;
-  max-width: 18%;
-  margin-right: 20px;
-}
-
-.loop3Step6Label--w-20:last-child {
-  margin-right: 0;
+  -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+  max-width: 20%;
+  padding-left: 20px;
 }
 
 .loop3Step6Label--billing {
@@ -764,6 +770,7 @@ html {
       align-items: center;
   margin-bottom: 20px;
   padding: 0 20px 21px;
+  outline: none;
   border-bottom: 1px solid #f0f0f0;
 }
 
@@ -786,21 +793,19 @@ html {
 .loop3Step6Label--billing .loop3Step6Label__span {
   position: relative;
   display: block;
-  width: 23px;
-  height: 23px;
+  width: 24px;
+  height: 24px;
   margin-right: 10px;
   border-radius: 50%;
   border: 2px solid #e4e4e4;
 }
 
-.loop3Step6Label--billing .loop3Step6Label__input:checked ~ .loop3Step6Label__span,
-.loop3Step6Label--billing .loop3Step6Label__input:focus ~ .loop3Step6Label__span {
+.loop3Step6Label--billing .loop3Step6Label__input:checked ~ .loop3Step6Label__span {
   background: #fff;
   border-color: #e4e4e4;
 }
 
-.loop3Step6Label--billing .loop3Step6Label__input:checked ~ .loop3Step6Label__span:before,
-.loop3Step6Label--billing .loop3Step6Label__input:focus ~ .loop3Step6Label__span:before {
+.loop3Step6Label--billing .loop3Step6Label__input:checked ~ .loop3Step6Label__span:before {
   content: '';
   position: absolute;
   top: 50%;
@@ -1029,7 +1034,7 @@ html {
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
     max-width: 100%;
-    margin-right: 0;
+    padding-left: 0;
   }
 
   .loop3Step6Info__items {
@@ -1038,14 +1043,14 @@ html {
   }
 
   .loop3Step6Label.loop3Step6Label--w-20 {
-    -ms-flex: 0 0 45%;
-        flex: 0 0 45%;
-    max-width: 45%;
-    margin-right: 10%;
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 0;
   }
 
   .loop3Step6Label.loop3Step6Label--w-20:last-child {
-    margin-right: 0;
+    padding-left: 10%;
   }
 
   .loop3Step6Info__top {
@@ -1057,8 +1062,7 @@ html {
   }
 
   .loop3Step6Info__bot {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    margin-left: 0;
   }
 }
 
@@ -1083,5 +1087,15 @@ html {
 
   .loop3Step6Title--billing {
     padding: 0 20px;
+  }
+
+  .loop3Step6Label.loop3Step6Label--w-20 {
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .loop3Step6Label.loop3Step6Label--w-20:last-child {
+    padding-left: 0;
   }
 }

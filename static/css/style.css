@@ -995,7 +995,7 @@ html {
   pointer-events: auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .loop3Step6PaymentMethod {
     -ms-flex-direction: column;
         flex-direction: column;

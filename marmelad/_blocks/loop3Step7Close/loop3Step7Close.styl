@@ -1,0 +1,28 @@
+.loop3Step7Close
+    position absolute
+    top -2px
+    right 0
+    width 43px
+    height 43px
+    border-radius 50%
+    border 2px solid #a8aaaa
+    cursor pointer
+    transition border-color 0.3s
+    
+    &:hover
+        border-color #fff
+        
+        &:before
+            color #fff
+    
+    &:before
+        content '×'
+        position absolute
+        top 50%
+        left 50%
+        font-size 40px
+        font-weight normal
+        line-height 40px
+        color #a8aaaa
+        transition color 0.3s
+        transform translate(-50%, -57%)

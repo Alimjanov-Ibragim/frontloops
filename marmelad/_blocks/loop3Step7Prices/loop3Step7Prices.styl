@@ -1,0 +1,28 @@
+.loop3Step7Prices
+    display flex
+    
+    &__price
+        position relative
+        padding 0 0 0 18px
+        font-size 12px
+        color #a8aaaa
+    
+    &__price--standard,
+    &__price--vip
+        &:before
+            content ''
+            position absolute
+            top 50%
+            left 0
+            width 10px
+            height 10px
+            margin-top -6px
+            border-radius 50%
+    
+    &__price--standard
+        &:before
+            background #4eaaff
+    &__price--vip
+        margin-left 23px
+        &:before
+            background #66d258

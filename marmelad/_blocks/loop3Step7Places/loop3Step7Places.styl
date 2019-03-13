@@ -1,0 +1,48 @@
+.loop3Step7Places
+    flex 1
+
+    &__row
+        display flex
+        justify-content space-around
+        margin-bottom 40px
+        padding 0 15px
+    
+    &__item
+        position relative
+        display flex
+        align-items center
+        justify-content center
+        width 22px
+        height 22px
+        font-size 15px
+        line-height 15px
+        color transparent
+        border-radius 50%
+        text-decoration none
+        outline none
+        background #4eaaff
+        transition color 0.3s
+
+        &:before
+            content ''
+            position absolute
+            top -4px
+            left -4px
+            right -4px
+            bottom -4px
+            border 1px solid #4eaaff
+            border-radius 50%
+            opacity 0
+            transition opacity 0.3s
+        
+        &:hover
+            color #fff
+
+            &:before
+                opacity 1
+    
+    &__item.vip
+        background #66d258
+        
+        &:before
+            border-color #66d258 

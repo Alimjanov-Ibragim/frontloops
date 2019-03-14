@@ -602,7 +602,15 @@ html {
   padding: 0 15px;
 }
 
-.loop3Step7Places__item {
+.loop3Step7Places__item.vip .loop3Step7Places__span {
+  background: #66d258;
+}
+
+.loop3Step7Places__item.vip .loop3Step7Places__span:before {
+  border-color: #66d258;
+}
+
+.loop3Step7Places__span {
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -622,7 +630,7 @@ html {
   transition: color 0.3s;
 }
 
-.loop3Step7Places__item:before {
+.loop3Step7Places__span:before {
   content: '';
   position: absolute;
   top: -4px;
@@ -635,20 +643,29 @@ html {
   transition: opacity 0.3s;
 }
 
-.loop3Step7Places__item:hover {
+.loop3Step7Places__span:hover,
+.loop3Step7Places__span:active {
   color: #fff;
 }
 
-.loop3Step7Places__item:hover:before {
+.loop3Step7Places__span:hover:before,
+.loop3Step7Places__span:active:before {
   opacity: 1;
 }
 
-.loop3Step7Places__item.vip {
-  background: #66d258;
+.loop3Step7Places__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-.loop3Step7Places__item.vip:before {
-  border-color: #66d258;
+.loop3Step7Places__input:checked ~ .loop3Step7Places__span {
+  color: #fff;
+}
+
+.loop3Step7Places__input:checked ~ .loop3Step7Places__span:before {
+  opacity: 1;
 }
 
 .loop3Step7Prices {

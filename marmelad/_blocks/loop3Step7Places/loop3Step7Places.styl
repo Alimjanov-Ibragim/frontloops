@@ -6,8 +6,16 @@
         justify-content space-around
         margin-bottom 40px
         padding 0 15px
-    
-    &__item
+        
+    &__item.vip
+        
+        .loop3Step7Places__span
+            background #66d258
+            
+            &:before
+                border-color #66d258
+
+    &__span
         position relative
         display flex
         align-items center
@@ -35,14 +43,21 @@
             opacity 0
             transition opacity 0.3s
         
-        &:hover
+        &:hover,
+        &:active
             color #fff
 
             &:before
                 opacity 1
     
-    &__item.vip
-        background #66d258
+    &__input
+        position absolute
+        opacity 0
+        width 0
+        height 0
+    
+    &__input:checked ~ .loop3Step7Places__span
+        color #fff
         
         &:before
-            border-color #66d258 
+            opacity 1

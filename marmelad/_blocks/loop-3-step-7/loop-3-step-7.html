@@ -1,6 +1,6 @@
 <div block="loop-3-step-7">
     <div elem="section">
-        <div block="loop3Step7Tickets">
+        <form action="" method="post" block="loop3Step7Tickets">
             <div elem="top">
                 <div block="loop3Step7Top">
                     <div block="loop3Step7Title">
@@ -38,9 +38,12 @@
                                 {% for i in range(1, 5) %}
                                     <div elem="row">
                                         {% for j in range(1, 11) %}
-                                            <a href="#" elem="item" {% if i == 2 or i == 3 %}{% if loop.index == 5 or loop.index == 6 %}class="vip"{% endif %}{% endif %}>
-                                                {{ j }}
-                                            </a>
+                                            <label href="#" elem="item" {% if i == 2 or i == 3 %}{% if loop.index == 5 or loop.index == 6 %}class="vip"{% endif %}{% endif %}>
+                                                <input type="checkbox" name="Ряд/Колонка" value="{{i}} / {{loop.index}}" elem="input">
+                                                <span elem="span">
+                                                    {{ j }}
+                                                </span>
+                                            </label>
                                         {% endfor %}
                                     </div>
                                 {% endfor %}
@@ -66,6 +69,6 @@
                     </button><!-- b:loop3Step7Button -->
                 </div><!-- b:loop3Step7Bot -->
             </div>
-        </div><!-- b:loop3Step7Tickets -->
+        </form><!-- b:loop3Step7Tickets -->
     </div>
 </div><!-- b:loop-3-step-7 -->

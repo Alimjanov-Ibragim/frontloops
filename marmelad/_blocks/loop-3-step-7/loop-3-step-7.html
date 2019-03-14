@@ -39,7 +39,7 @@
                                     <div elem="row">
                                         {% for j in range(1, 11) %}
                                             <label href="#" elem="item" {% if i == 2 or i == 3 %}{% if loop.index == 5 or loop.index == 6 %}class="vip"{% endif %}{% endif %}>
-                                                <input type="checkbox" name="Ряд/Колонка" value="{{i}} / {{loop.index}}" elem="input">
+                                                <input type="checkbox" name="Place[]" value="{{i}}/{{loop.index}}" elem="input">
                                                 <span elem="span">
                                                     {{ j }}
                                                 </span>

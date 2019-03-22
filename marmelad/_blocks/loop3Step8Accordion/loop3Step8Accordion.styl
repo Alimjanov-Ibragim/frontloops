@@ -1,0 +1,47 @@
+.loop3Step8Accordion
+    display flex
+    flex-direction column
+    
+    &__titles
+        display flex
+        margin-bottom 21px
+    
+    &__title
+        position relative
+        margin-right 25px
+        padding-bottom 11px
+        font-size 15px
+        font-weight bold
+        line-height 15px
+        color #a9abb9
+        text-transform uppercase
+
+        &:before
+            content ''
+            position absolute
+            bottom 0
+            left 0
+            opacity 0
+            width 30px
+            border-bottom 3px solid #f08ba7
+            trasition opacity 0.3s
+
+        &:last-child
+            margin-right 0
+
+    &__title.opened
+        color #fff
+        
+        &:before
+            opacity 1
+    
+    &__body
+        display none
+        font-size 25px
+        font-weight bold
+        line-height 25px
+        color #b1b2ba
+        text-transform capitalize
+    
+    &__body.opened
+        display block

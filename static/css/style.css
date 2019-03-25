@@ -479,6 +479,7 @@ html {
   position: relative;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 40px;
 }
 
 .loop3Step8Accordion__item {
@@ -494,6 +495,11 @@ html {
   line-height: 15px;
   color: #a9abb9;
   text-transform: uppercase;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .loop3Step8Accordion__title:before {
@@ -578,7 +584,7 @@ html {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  padding: 40px 40px 87px;
+  padding: 40px 40px 70px;
   border-radius: 5px;
   background: #525773;
 }
@@ -589,6 +595,13 @@ html {
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin-bottom: 33px;
+}
+
+.loop3Step8Gaming__mid {
+  height: 390px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .loop3Step8Gaming__bot {
@@ -828,11 +841,11 @@ html {
 }
 
 .loop3Step8Slider .owl-nav .owl-prev {
-  left: -4px;
+  left: 0px;
 }
 
 .loop3Step8Slider .owl-nav .owl-next {
-  right: -4px;
+  right: 0px;
 }
 
 .loop3Step8Slider .owl-dots {

@@ -1,9 +1,8 @@
 .loop3Step8Accordion
+    position relative
     display flex
-    flex-direction column
     
-    &__titles
-        display flex
+    &__item
         margin-bottom 21px
     
     &__title
@@ -28,20 +27,27 @@
 
         &:last-child
             margin-right 0
-
-    &__title.opened
-        color #fff
-        
-        &:before
-            opacity 1
     
     &__body
-        display none
+        position absolute
+        top 47px
+        left 0
+        right 0
+        width 100%
+        max-width 100%
+        opacity 0
         font-size 25px
         font-weight bold
         line-height 25px
         color #b1b2ba
         text-transform capitalize
     
-    &__body.opened
-        display block
+    &__item.isOpened 
+        .loop3Step8Accordion__body
+            opacity 1
+        
+        .loop3Step8Accordion__title
+            color #fff
+            
+            &:before
+                opacity 1

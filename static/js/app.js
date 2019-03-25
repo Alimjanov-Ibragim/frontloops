@@ -129,21 +129,18 @@ $(function () {
 
   var Atitle = $('.loop3Step8Accordion__title');
   var Abody = $('.loop3Step8Accordion__body');
-  var i = 1;
-  Atitle.each(function () {
-    $(this).attr('data-info', i);
-    i++;
-  });
-  var i = 1;
-  Abody.each(function () {
-    $(this).attr('data-info', i);
-    i++;
-  });
-  $('.loop3Step8Accordion__titles').on('click', '.loop3Step8Accordion__title', function () {
-    var bb = $(this).attr('data-info');
-    console.log(bb);
-    $(this).addClass('opened');
-    $(this).parents().find('.loop3Step8Accordion__body[data-info=bb]').addClass('opened');
+  $('.loop3Step8Accordion__title').on('click', function () {
+    var body = $(this).closest('.loop3Step8Accordion__item').find('.accordion__body');
+
+    if ($(this).closest('.loop3Step8Accordion__item').hasClass('isOpened')) {
+      $(this).closest('.loop3Step8Accordion__item').removeClass('isOpened');
+      body.stop().slideUp();
+    } else {
+      $('.loop3Step8Accordion__item.isOpened .accordion__body').slideUp();
+      $('.loop3Step8Accordion__item.isOpened').removeClass('isOpened');
+      $(this).closest('.loop3Step8Accordion__item').addClass('isOpened');
+      body.stop().slideDown();
+    }
   });
   $('.loop3Step8Slider').owlCarousel({
     loop: true,

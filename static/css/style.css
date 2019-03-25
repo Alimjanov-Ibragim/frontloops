@@ -476,15 +476,12 @@ html {
 }
 
 .loop3Step8Accordion {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
 }
 
-.loop3Step8Accordion__titles {
-  display: -ms-flexbox;
-  display: flex;
+.loop3Step8Accordion__item {
   margin-bottom: 21px;
 }
 
@@ -514,16 +511,14 @@ html {
   margin-right: 0;
 }
 
-.loop3Step8Accordion__title.opened {
-  color: #fff;
-}
-
-.loop3Step8Accordion__title.opened:before {
-  opacity: 1;
-}
-
 .loop3Step8Accordion__body {
-  display: none;
+  position: absolute;
+  top: 47px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  opacity: 0;
   font-size: 25px;
   font-weight: bold;
   line-height: 25px;
@@ -531,8 +526,16 @@ html {
   text-transform: capitalize;
 }
 
-.loop3Step8Accordion__body.opened {
-  display: block;
+.loop3Step8Accordion__item.isOpened .loop3Step8Accordion__body {
+  opacity: 1;
+}
+
+.loop3Step8Accordion__item.isOpened .loop3Step8Accordion__title {
+  color: #fff;
+}
+
+.loop3Step8Accordion__item.isOpened .loop3Step8Accordion__title:before {
+  opacity: 1;
 }
 
 .loop3Step8Button {
@@ -575,7 +578,7 @@ html {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  padding: 40px 40px 60px;
+  padding: 40px 40px 87px;
   border-radius: 5px;
   background: #525773;
 }
@@ -597,7 +600,7 @@ html {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  height: 70px;
+  height: 72px;
   padding: 0 40px;
   background: #3d3f5c;
   border-radius: 0 0 5px 5px;

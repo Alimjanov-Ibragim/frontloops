@@ -1,10 +1,9 @@
 .loop3Step8Accordion
     position relative
-    display flex
-    padding-bottom 40px
     
-    &__item
-        margin-bottom 21px
+    &__titles
+        display flex
+        margin-bottom 20px
     
     &__title
         position relative
@@ -14,6 +13,7 @@
         font-weight bold
         line-height 15px
         color #a9abb9
+        text-decoration none
         text-transform uppercase
         cursor pointer
         user-select none
@@ -32,25 +32,23 @@
             margin-right 0
     
     &__body
-        position absolute
-        top 47px
-        left 0
-        right 0
+        display none
         width 100%
         max-width 100%
-        opacity 0
         font-size 25px
         font-weight bold
         line-height 25px
         color #b1b2ba
         text-transform capitalize
-    
-    &__item.isOpened 
-        .loop3Step8Accordion__body
-            opacity 1
         
-        .loop3Step8Accordion__title
-            color #fff
-            
-            &:before
-                opacity 1
+        h1
+            color #b1b2ba
+    
+    .loop3Step8Accordion__body.isOpened
+        display block
+    
+    .loop3Step8Accordion__title.isOpened
+        color #fff
+        
+        &:before
+            opacity 1

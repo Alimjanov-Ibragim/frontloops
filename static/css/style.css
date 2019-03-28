@@ -1202,6 +1202,12 @@ html {
     margin-bottom: 10px;
   }
 
+  .loop3Step9Contents__item {
+    -ms-flex: 0 0 150px;
+        flex: 0 0 150px;
+    max-width: 150px;
+  }
+
   .loop3Step9Date {
     -ms-flex-direction: column;
         flex-direction: column;

@@ -1,0 +1,114 @@
+.loop3Step9Player
+    flex 0 0 325px
+    max-width 325px
+    margin-right 41px
+    padding 20px 0 0
+
+    &__top
+        display flex
+        align-items center
+        margin-bottom 10px
+
+    &__img
+        position relative
+        z-index 1
+        width 60px
+        height 60px
+        margin-right 14px
+        
+        &:after
+            content ''
+            position absolute
+            bottom 9px
+            left 20px
+            right 20px
+            z-index -1
+            box-shadow 0px 8px 9px 5px rgba(0,0,0,0.4)
+
+        img
+            width 100%
+
+    &__title
+        margin-bottom 5px
+        font-size 14px
+        line-height 14px
+        color #000
+
+    &__subtitle
+        font-size 13px
+        line-height 13px
+        color #aaa
+
+.mejs-controls .mejs-time-rail .mejs-time-total
+    width 170px !important
+    margin-top 7px
+    background #ebebeb
+
+.mejs-controls .mejs-time-rail .mejs-time-current
+    position relative
+    background #000
+    
+    &:before
+        content ''
+        position absolute
+        top 50%
+        right 0
+        margin-top -3px
+        width 8px
+        height 6px
+        border-radius 50%
+        background #000
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded
+    background #ebebeb
+
+.mejs-controls .mejs-time-rail span, .mejs-controls .mejs-time-rail a,
+.mejs-controls .mejs-time-rail .mejs-time-total
+    height 2px
+
+.mejs-controls div.mejs-time-rail
+    width 180px !important
+    height 16px
+    padding-top 0
+
+.mejs-container
+    width 275px !important
+    background none
+
+.mejs-container .mejs-controls
+    display flex
+    align-items center
+    background none
+
+.mejs-container .mejs-controls .mejs-time
+    display flex
+    align-items center
+    order -1
+    padding-top 0
+    padding-bottom 0
+    color #aaa
+
+.mejs-container .mejs-controls div.mejs-play,
+.mejs-button.mejs-playpause-button.mejs-pause
+    display flex
+    align-items center
+    order -2
+
+.mejs-controls .mejs-button button
+    margin 0
+
+.mejs-controls .mejs-time-rail .mejs-time-float
+    position relative
+    display block !important
+    border none
+    top -8px
+    left 170px !important
+    margin-left 0
+    color #aaa
+    background none
+
+.mejs-controls .mejs-time-rail .mejs-time-float-corner
+    display none
+
+.mejs-controls .mejs-button button:focus
+    outline none

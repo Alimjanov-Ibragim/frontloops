@@ -1,0 +1,46 @@
+.loop3Step9TV
+    position relative
+    z-index 5
+    display flex
+    
+    &:before
+        content ''
+        position absolute
+        bottom 2px
+        left 0
+        right 0
+        z-index -1
+        border 1px solid #dedede
+
+    &__img
+        display flex
+        align-items center
+        justify-content center
+        flex 0 0 110px
+        max-width 110px
+
+        .svg-icon
+            width 30px
+            height 30px
+            fill #a3c5f3
+            vertical-align middle
+        
+    &__info
+        // overflow hidden
+        overflow-x auto
+        padding-bottom 33px
+
+        &::-webkit-scrollbar {
+            height 6px
+            cursor pointer
+        }
+
+        /* scrollbar itself */
+        &::-webkit-scrollbar-thumb {
+            background-color:#a3c5f3;
+            border-radius:16px;
+            cursor pointer
+        }
+
+        /* set button(top and bottom of the scrollbar) */
+        &::-webkit-scrollbar-button {display:none}

@@ -1,0 +1,72 @@
+.loop3Step9Playlist
+    display flex
+    
+    &__item
+        &:hover,
+        &:active
+            .loop3Step9Playlist__span
+                opacity 1
+    
+    &__img
+        position relative
+        z-index 1
+        margin-bottom 20px
+        
+        &:after
+            content ''
+            position absolute
+            bottom 9px
+            left 20px
+            right 20px
+            z-index -1
+            box-shadow 0px 8px 9px 5px rgba(0,0,0,0.6)
+
+        &:before
+            content ''
+            position absolute
+            top 0
+            left 0
+            right 0
+            bottom 0
+            background rgba(#000,0.5)
+        
+        img
+            width 100%
+    
+    &__span
+        position absolute
+        top 50%
+        left 50%
+        width 35px
+        height 35px
+        opacity 0
+        border-radius 50%
+        background rgba(#000,0.7)
+        transform translate(-50%,-50%)
+        transition opacity 0.3s
+        
+        &:before
+            content ''
+            position absolute
+            top 12px
+            left 14px
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 6px 0 6px 12px;
+            border-color: transparent transparent transparent #fff;
+
+    &__item
+        flex 0 0 100px
+        max-width 100px
+    
+    &__item.active
+        .loop3Step9Playlist__img
+            position relative
+            z-index 5
+            transform scale(1.25);
+    
+    &__title
+        font-size 15px
+        line-height 15px
+        color #000

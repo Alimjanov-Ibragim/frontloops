@@ -47,7 +47,6 @@
 
         <link rel="stylesheet" href="css/plugins.min.css">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelementplayer.min.css">
         <link rel="stylesheet" href="css/style.css">
 
     </head>
@@ -267,9 +266,12 @@
                                 </div>
                             </div>
                             <div class="loop3Step9Player__bot">
-                                <audio class="audio">
-                                    <source type="audio/mpeg" src="audio/brendans-death-song.mp3">
-                                </audio>
+                                <audio id="player" src="audio/brendans-death-song.mp3"></audio>
+                                <div>
+                                   <button onclick="document.getElementById('player').play()" class="play">Play</button>
+                                   <button class="pause">Pause</button>
+                                   <button class="process">process</button>
+                                </div>
                             </div>
                         </div><!-- b:loop3Step9Player -->
                         <div class="loop3Step9Playlist">
@@ -394,8 +396,5 @@
         <script src="js/vendors/jquery-3.2.1.min.js"></script>
         <script src="js/plugins.min.js"></script>
         <script src="js/app.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/jquery.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js"></script>
-    
     </body><!-- b:w-page -->
 </html>

@@ -1,3 +1,5 @@
-$('audio').mediaelementplayer({
-    features: ['playpause','progress','current','tracks','fullscreen']
+const audio = document.getElementById('player')
+
+audio.addEventListener('play', (event) => {
+  
 });

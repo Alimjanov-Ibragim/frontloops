@@ -159,9 +159,12 @@
                                 </div>
                             </div>
                             <div elem="bot">
-                                <audio class="audio">
-                                    <source type="audio/mpeg" src="audio/brendans-death-song.mp3">
-                                </audio>
+                                <audio id="player" src="audio/brendans-death-song.mp3"></audio>
+                                <div>
+                                   <button onclick = "document.getElementById('player').play()" class="play">Play</button>
+                                   <button class="pause">Pause</button>
+                                   <button class="process">process</button>
+                                </div>
                             </div>
                         </div><!-- b:loop3Step9Player -->
                         <div block="loop3Step9Playlist">

@@ -127,9 +127,8 @@ $(function () {
    */
 
 
-  $('audio').mediaelementplayer({
-    features: ['playpause', 'progress', 'current', 'tracks', 'fullscreen']
-  });
+  var audio = document.getElementById('player');
+  audio.addEventListener('play', function (event) {});
   ;
 
   (function ($) {
